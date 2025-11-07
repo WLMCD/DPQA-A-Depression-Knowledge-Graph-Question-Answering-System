@@ -1,0 +1,35 @@
+{
+  "normalize": {
+    "lowercase": true,
+    "strip_punct": true,
+    "fullwidth_halfwidth": true,
+    "dedupe": true
+  },
+  "match_strategy": {
+    "type": "set_overlap",
+    "threshold": 0.5,
+    "explanations": "将模型输出切分为词/短语，与 gold_terms 做 Jaccard>=0.5 视为正确；cid=3 另外满足：输出包含 drug_b 且与 expected_text 有≥10字符子串重合，或命中关键词集合中≥2个词，也判定正确。"
+  },
+  "per_cid_overrides": {
+    "2": {
+      "min_hits": 2
+    },
+    "3": {
+      "must_include": ["drug_b"],
+      "keywords": [
+        "contraindicated", "increase", "decrease", "serotonin", "monitor",
+        "监测", "相互作用", "避免", "增强", "降低"
+      ],
+      "substring_min_len": 10
+    },
+    "9": {
+      "threshold": 0.35,
+      "min_hits": 1
+    },
+    "10": {
+      "type": "subset",
+      "at_least": 1,
+      "note": "预测PMID命中任意一个即算正确；更严格可设命中比例≥0.5"
+    }
+  }
+}

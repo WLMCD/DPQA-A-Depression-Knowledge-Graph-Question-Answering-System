@@ -1,0 +1,3539 @@
+{
+  "summary": {
+    "total": 61,
+    "overall_acc": 0.7540983606557377,
+    "mean_ms": 2548.3914633266263,
+    "p50": 1423.555850982666,
+    "p90": 3071.692419052124,
+    "p95": 4086.9824171066284
+  },
+  "per_cid_total": {
+    "1": 5,
+    "2": 6,
+    "3": 5,
+    "4": 5,
+    "5": 5,
+    "6": 5,
+    "7": 5,
+    "8": 5,
+    "9": 5,
+    "10": 5,
+    "11": 5,
+    "0": 5
+  },
+  "per_cid_ok": {
+    "1": 3,
+    "2": 6,
+    "3": 5,
+    "4": 4,
+    "5": 5,
+    "6": 2,
+    "7": 4,
+    "8": 3,
+    "9": 4,
+    "10": 5,
+    "11": 5,
+    "0": 0
+  },
+  "details": [
+    {
+      "idx": 1,
+      "cid": 1,
+      "question": "Maprotiline 的适应证有哪些？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 2071.99,
+      "pred_terms": [
+        "depression",
+        "helpful",
+        "involutional",
+        "suffering",
+        "depressive",
+        "treatment",
+        "certain",
+        "melancholia",
+        "and",
+        "be",
+        "treating",
+        "neurosis",
+        "patients",
+        "also",
+        "severe",
+        "may",
+        "including",
+        "for",
+        "bipolar",
+        "in",
+        "phase",
+        "psychotic",
+        "the",
+        "of",
+        "depressed"
+      ],
+      "expected_terms": [
+        "For treatment of depression",
+        "including the depressed phase of bipolar depression",
+        "psychotic depression",
+        "and involutional melancholia",
+        "and may also be helpful in treating certain patients suffering severe depressive neurosis."
+      ],
+      "rows_preview": [
+        {
+          "indication": "For treatment of depression, including the depressed phase of bipolar depression, psychotic depression, and involutional melancholia, and may also be helpful in treating certain patients suffering severe depressive neurosis."
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "cid": 2,
+      "question": "马普替林 的常见副作用有哪些？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1209.46,
+      "pred_terms": [
+        "conduction",
+        "up",
+        "women",
+        "hypotension",
+        "tachycardia",
+        "depression",
+        "signs",
+        "convulsions",
+        "motor",
+        "mydriasis",
+        "ld",
+        "cyanosis",
+        "twitching",
+        "disturbances",
+        "900",
+        "tremor",
+        "and",
+        "deep",
+        "kg",
+        "include",
+        "shock",
+        "rigidity",
+        "to",
+        "vomiting",
+        "cardiac",
+        "mg",
+        "orally",
+        "impaired",
+        "overdose",
+        "unrest",
+        "90",
+        "50",
+        "rats",
+        "coma",
+        "arrhythmias",
+        "hyperpyrexia",
+        "vertigo",
+        "in",
+        "ataxia",
+        "consciousness",
+        "respiratory",
+        "of",
+        "muscular"
+      ],
+      "expected_terms": [
+        "LD<sub>50</sub>=~900 mg/kg (Orally in rats); LD<sub>50</sub>=90 mg/kg (Orally in women); Signs of overdose include motor unrest",
+        "muscular twitching and rigidity",
+        "tremor",
+        "ataxia",
+        "convulsions",
+        "hyperpyrexia",
+        "vertigo",
+        "mydriasis",
+        "vomiting",
+        "cyanosis"
+      ],
+      "rows_preview": [
+        {
+          "side_effect_text": "LD<sub>50</sub>=~900 mg/kg (Orally in rats); LD<sub>50</sub>=90 mg/kg (Orally in women); Signs of overdose include motor unrest, muscular twitching and rigidity, tremor, ataxia, convulsions, hyperpyrexia, vertigo, mydriasis, vomiting, cyanosis, hypotension, shock, tachycardia, cardiac arrhythmias, impaired cardiac conduction, respiratory depression, and disturbances of consciousness up to deep coma."
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "cid": 3,
+      "question": "Maprotiline 与 Mirtazapine 一起使用是否有相互作用？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 2797.64,
+      "pred_terms": [
+        "risk",
+        "can",
+        "depression",
+        "or",
+        "is",
+        "increase",
+        "esmirtazapine",
+        "with",
+        "mirtazapine",
+        "be",
+        "may",
+        "increased",
+        "cns",
+        "when",
+        "maprotiline",
+        "combined",
+        "the",
+        "of",
+        "activities",
+        "serotonergic",
+        "severity"
+      ],
+      "expected_terms": [
+        "Mirtazapine",
+        "2",
+        "5-Dimethoxy-4-ethylamphetamine may decrease the sedative activities of Maprotiline."
+      ],
+      "rows_preview": [
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "The risk or severity of CNS depression can be increased when Maprotiline is combined with Esmirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "米氮平",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "cid": 4,
+      "question": "我有绝经抑郁症， 你觉得我吃些什么比较好？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1693.7,
+      "pred_terms": [
+        "火鸡肉",
+        "大白豆",
+        "黄豆浆",
+        "蛋白质",
+        "鲑鱼",
+        "糖类",
+        "母鸡汤",
+        "白鱼"
+      ],
+      "expected_terms": [
+        "大白豆",
+        "母鸡汤",
+        "火鸡肉",
+        "白鱼",
+        "糖类",
+        "蛋白质",
+        "鲑鱼",
+        "黄豆浆"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "大白豆"
+        },
+        {
+          "food_label": "母鸡汤"
+        },
+        {
+          "food_label": "火鸡肉"
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "cid": 4,
+      "question": "医生说我有微笑抑郁症，我可以吃些什么？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1208.42,
+      "pred_terms": [
+        "大蒜",
+        "南瓜",
+        "葡萄柚",
+        "深水鱼",
+        "低脂牛奶",
+        "含硒类食品",
+        "菠菜",
+        "香蕉"
+      ],
+      "expected_terms": [
+        "低脂牛奶",
+        "南瓜",
+        "含硒类食品",
+        "大蒜",
+        "深水鱼",
+        "菠菜",
+        "葡萄柚",
+        "香蕉"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "低脂牛奶"
+        },
+        {
+          "food_label": "南瓜"
+        },
+        {
+          "food_label": "含硒类食品"
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "cid": 4,
+      "question": "产后抑郁症的饮食推荐有哪些？",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 1118.8,
+      "pred_terms": [
+        "深海鱼",
+        "草鱼",
+        "酵母粉",
+        "牛奶",
+        "红豆",
+        "蘑菇",
+        "核桃",
+        "新鲜蔬果",
+        "香蕉",
+        "鸡蛋",
+        "芝麻",
+        "麦芽",
+        "优质肉类",
+        "葡萄柚",
+        "木瓜",
+        "豌豆",
+        "大豆",
+        "酪梨",
+        "瘦肉",
+        "坚果类",
+        "动物肝",
+        "全麦",
+        "谷类",
+        "空心菜",
+        "柑橘类",
+        "粗粮",
+        "葵花子",
+        "深绿色蔬菜",
+        "马铃薯",
+        "香瓜",
+        "菠菜",
+        "南瓜子",
+        "猪肉",
+        "荔枝",
+        "绿色蔬菜",
+        "花生",
+        "番茄"
+      ],
+      "expected_terms": [
+        "优质肉类",
+        "全麦",
+        "动物肝",
+        "南瓜子",
+        "坚果类",
+        "大豆",
+        "新鲜蔬果",
+        "木瓜",
+        "柑橘类",
+        "核桃"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "优质肉类"
+        },
+        {
+          "food_label": "全麦"
+        },
+        {
+          "food_label": "动物肝"
+        }
+      ]
+    },
+    {
+      "idx": 7,
+      "cid": 4,
+      "question": "我被确诊抑郁性神经症吃什么东西可以帮助我缓解？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1436.88,
+      "pred_terms": [
+        "深海鱼",
+        "大蒜",
+        "樱桃",
+        "南瓜",
+        "葡萄柚",
+        "低脂牛奶",
+        "菠菜",
+        "全麦面包",
+        "香蕉",
+        "鸡肉"
+      ],
+      "expected_terms": [
+        "低脂牛奶",
+        "全麦面包",
+        "南瓜",
+        "大蒜",
+        "樱桃",
+        "深海鱼",
+        "菠菜",
+        "葡萄柚",
+        "香蕉",
+        "鸡肉"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "低脂牛奶"
+        },
+        {
+          "food_label": "全麦面包"
+        },
+        {
+          "food_label": "南瓜"
+        }
+      ]
+    },
+    {
+      "idx": 8,
+      "cid": 5,
+      "question": "绝经抑郁症最好不要吃什么？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1171.42,
+      "pred_terms": [
+        "浓茶",
+        "汉堡",
+        "鱿鱼",
+        "海参",
+        "咖啡",
+        "鱼翅",
+        "薯条"
+      ],
+      "expected_terms": [
+        "咖啡",
+        "汉堡",
+        "浓茶",
+        "海参",
+        "薯条",
+        "鱼翅",
+        "鱿鱼"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "咖啡"
+        },
+        {
+          "food_label": "汉堡"
+        },
+        {
+          "food_label": "浓茶"
+        }
+      ]
+    },
+    {
+      "idx": 9,
+      "cid": 5,
+      "question": "产后抑郁症 的饮食禁忌有哪些？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 2854.34,
+      "pred_terms": [
+        "羊肉",
+        "鳗鱼",
+        "螃蟹"
+      ],
+      "expected_terms": [
+        "羊肉",
+        "螃蟹",
+        "鳗鱼"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "羊肉"
+        },
+        {
+          "food_label": "螃蟹"
+        },
+        {
+          "food_label": "鳗鱼"
+        }
+      ]
+    },
+    {
+      "idx": 10,
+      "cid": 5,
+      "question": "得了抑郁性神经症不能吃什么？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1196.89,
+      "pred_terms": [
+        "丁香",
+        "辣椒",
+        "酱油"
+      ],
+      "expected_terms": [
+        "丁香",
+        "辣椒",
+        "酱油"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "丁香"
+        },
+        {
+          "food_label": "辣椒"
+        },
+        {
+          "food_label": "酱油"
+        }
+      ]
+    },
+    {
+      "idx": 11,
+      "cid": 6,
+      "question": "绝经抑郁症的护理要点有哪些？（饮食/检查/护理）",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 2372.22,
+      "pred_terms": [
+        "开创了安全治疗抑郁症的新时代",
+        "米氮平",
+        "鼾声",
+        "受体特异性",
+        "ht能抗抑郁药",
+        "http",
+        "食物不影响其吸收",
+        "血液透析",
+        "值得一提的是",
+        "心电活动",
+        "kgqa",
+        "睡眠进程",
+        "周",
+        "是ne能和特异性5",
+        "2周后才会产生明显的疗效",
+        "基于特异性作用于受体的机理",
+        "尽管药物治疗能够缓解抑郁症状",
+        "三酰甘油",
+        "肾上腺素异受体而增强ne",
+        "性激素六项检查",
+        "高密度脂蛋白胆固醇",
+        "病情完全缓解后仍然需要维持治疗4",
+        "黄豆浆",
+        "急性过量服药对生命几乎没有威胁",
+        "氟西汀是ssris",
+        "但几乎不能够预防复发",
+        "并能改善睡眠和抗焦虑",
+        "ht1受体",
+        "血氧饱和度",
+        "45mg",
+        "对多数患者而言",
+        "精神病症状",
+        "应该特别提醒患者及其家属",
+        "1严重或复发的抑郁",
+        "血清总胆固醇",
+        "是中枢神经系统突触前5",
+        "能系统的神经传导",
+        "纤维蛋白原",
+        "平均血氧饱和度",
+        "通常抗抑郁治疗依从性不好",
+        "年或更长时间",
+        "一些患者在症状好转后常常自行减量甚至停药",
+        "口鼻气流",
+        "它通过阻断中枢α2",
+        "适应证是",
+        "但活动性却有提高",
+        "ht释放后回收的强效抑制剂",
+        "睡眠效率",
+        "星期才能体现出来",
+        "白鱼",
+        "最佳疗效要到服药后4",
+        "抗抑郁药是改善抑郁心境的首选治疗",
+        "12",
+        "判断患者处于抑郁状态",
+        "性激素六项检查相关症状",
+        "非典型症状或季节性",
+        "9",
+        "肾脏排出",
+        "能加速5",
+        "所以又有新型的抗抑郁药面市",
+        "保持乐观愉快的情绪",
+        "应在睡前一次口服",
+        "ht3受体",
+        "4既往药物治疗有效",
+        "患者心境仍然低落",
+        "血小板",
+        "应该加强监护",
+        "达4",
+        "肾上腺素自受体和α2",
+        "3有自杀观念",
+        "cn",
+        "值得特别注意的是",
+        "大白豆",
+        "胸腹运动",
+        "与三环类",
+        "药物相比",
+        "nas",
+        "抗肾上腺素能及典型的ssris的副作用",
+        "双侧眼电活动",
+        "瑞美隆",
+        "鲑鱼",
+        "母鸡汤",
+        "临床医生经过综合分析",
+        "颌肌电活动",
+        "ht能和ne能系统有关",
+        "半衰期最长",
+        "有自杀念头的患者更容易将自杀计划付诸于行动",
+        "有助于选择有效的治疗方法",
+        "兴奋5",
+        "作用为基础",
+        "6",
+        "ht能和ne能神经递质的双重作用",
+        "凝血酶原时间",
+        "因不良反应而停药的几率低",
+        "阻断5",
+        "促进5",
+        "肝肾功能检查",
+        "然后维持治疗1",
+        "由于抑郁症与5",
+        "睡眠时间",
+        "2有躯体症状",
+        "应鼓励服药数年",
+        "经过肝脏代谢",
+        "即使没有上述指征",
+        "内源性抑郁",
+        "ht2和5",
+        "5有情感障碍家族史",
+        "ht",
+        "糖类",
+        "而且多数病人无须加药",
+        "透析",
+        "它通过5",
+        "抑郁症急性期需药物治疗6",
+        "8",
+        "对有两次以上明显重症抑郁发作的患者",
+        "待症状缓解后巩固治疗4",
+        "测量腹围",
+        "服药1",
+        "了解患者是否伴有躯体症状",
+        "火鸡肉",
+        "depression",
+        "低密度脂蛋白胆固醇",
+        "抑郁症很容易复发",
+        "天",
+        "有效剂量在15",
+        "提高耐受性",
+        "对三环类药物治疗无效的抑郁障碍亦有效",
+        "睡眠潜伏期",
+        "6心理治疗无效",
+        "tca",
+        "由于初始服药2周药物尚未显效",
+        "个月",
+        "合理膳食",
+        "能神经元胞体的放电",
+        "蛋白质",
+        "或精神病症状的抑郁",
+        "也可以推荐药物治疗",
+        "中的一种",
+        "故没有抗胆碱能",
+        "ht的释放",
+        "能和5",
+        "ssris类抗抑郁药应用于临床",
+        "凝血酶时间",
+        "与其他ssris",
+        "血红蛋白",
+        "脑电活动",
+        "血脂水平测量",
+        "以预防复发",
+        "否则",
+        "相比不良反应少",
+        "的一种",
+        "睡眠结构",
+        "因此危险性较高",
+        "合理作息",
+        "sa",
+        "以"
+      ],
+      "expected_terms": [
+        "大白豆",
+        "母鸡汤",
+        "火鸡肉",
+        "白鱼",
+        "糖类",
+        "蛋白质",
+        "三酰甘油",
+        "低密度脂蛋白胆固醇",
+        "凝血酶原时间",
+        "凝血酶时间",
+        "双侧眼电活动",
+        "口鼻气流",
+        "保持乐观愉快的情绪；合理作息；合理膳食"
+      ],
+      "rows_preview": [
+        {
+          "food_suitability": "http://kgqa.cn/depression#大白豆|http://kgqa.cn/depression#母鸡汤|http://kgqa.cn/depression#火鸡肉|http://kgqa.cn/depression#白鱼|http://kgqa.cn/depression#糖类|http://kgqa.cn/depression#蛋白质|http://kgqa.cn/depression#鲑鱼|http://kgqa.cn/depression#黄豆浆",
+          "drug_treatments_desc": "适应证是：①严重或复发的抑郁;②有躯体症状(内源性抑郁)或精神病症状的抑郁;③有自杀观念;④既往药物治疗有效;⑤有情感障碍家族史;⑥心理治疗无效。值得一提的是，即使没有上述指征，临床医生经过综合分析，判断患者处于抑郁状态，也可以推荐药物治疗。对多数患者而言，抗抑郁药是改善抑郁心境的首选治疗。\nSSRIs类抗抑郁药应用于临床，开创了安全治疗抑郁症的新时代，与三环类(TCA)相比不良反应少，因不良反应而停药的几率低，对三环类药物治疗无效的抑郁障碍亦有效，急性过量服药对生命几乎没有威胁，而且多数病人无须加药。氟西汀是SSRIs 中的一种，是中枢神经系统突触前5-HT释放后回收的强效抑制剂，与其他SSRIs 药物相比，半衰期最长，达4～6 天，食物不影响其吸收，经过肝脏代谢，肾脏排出。由于抑郁症与5-HT能和NE能系统有关，所以又有新型的抗抑郁药面市，它通过5-HT能和NE能神经递质的双重作用，以“受体特异性”作用为基础，提高耐受性。米氮平(瑞美隆)是NE能和特异性5-HT能抗抑郁药(NaS-SA)的一种。它通过阻断中枢α2-肾上腺素自受体和α2-肾上腺素异受体而增强NE 能和5-HT 能系统的神经传导。米氮平(瑞美隆)能加速5-HT 能神经元胞体的放电，促进5-HT的释放，兴奋5-HT1受体，阻断5-HT2和5-HT3受体，基于特异性作用于受体的机理，故没有抗胆碱能、抗肾上腺素能及典型的SSRIs的副作用，并能改善睡眠和抗焦虑。米氮平(瑞美隆)应在睡前一次口服，有效剂量在15～45mg，病情完全缓解后仍然需要维持治疗4～6 个月。了解患者是否伴有躯体症状、精神病症状、非典型症状或季节性，有助于选择有效的治疗方法。应该特别提醒患者及其家属，服药1～2周后才会产生明显的疗效，最佳疗效要到服药后4～8 星期才能体现出来。由于初始服药2周药物尚未显效，患者心境仍然低落，但活动性却有提高，有自杀念头的患者更容易将自杀计划付诸于行动，因此危险性较高，应该加强监护。抑郁症急性期需药物治疗6～12 周，待症状缓解后巩固治疗4～9 个月，然后维持治疗1 年或更长时间。否则，抑郁症很容易复发。尽管药物治疗能够缓解抑郁症状，但几乎不能够预防复发。对有两次以上明显重症抑郁发作的患者，应鼓励服药数年，以预防复发。值得特别注意的是，通常抗抑郁治疗依从性不好，一些患者在症状好转后常常自行减量甚至停药。",
+          "checks": "http://kgqa.cn/depression#|http://kgqa.cn/depression#三酰甘油|http://kgqa.cn/depression#低密度脂蛋白胆固醇|http://kgqa.cn/depression#凝血酶原时间|http://kgqa.cn/depression#凝血酶时间|http://kgqa.cn/depression#双侧眼电活动|http://kgqa.cn/depression#口鼻气流|http://kgqa.cn/depression#平均血氧饱和度|http://kgqa.cn/depression#心电活动|http://kgqa.cn/depression#性激素六项检查|http://kgqa.cn/depression#性激素六项检查相关症状|http://kgqa.cn/depression#测量腹围|http://kgqa.cn/depression#睡眠效率|http://kgqa.cn/depression#睡眠时间|http://kgqa.cn/depression#睡眠潜伏期|http://kgqa.cn/depression#睡眠结构|http://kgqa.cn/depression#睡眠进程|http://kgqa.cn/depression#纤维蛋白原|http://kgqa.cn/depression#肝肾功能检查|http://kgqa.cn/depression#胸腹运动|http://kgqa.cn/depression#脑电活动|http://kgqa.cn/depression#血小板|http://kgqa.cn/depression#血氧饱和度|http://kgqa.cn/depression#血液透析|http://kgqa.cn/depression#血清总胆固醇|http://kgqa.cn/depression#血红蛋白|http://kgqa.cn/depression#血脂水平测量|http://kgqa.cn/depression#透析|http://kgqa.cn/depression#颌肌电活动|http://kgqa.cn/depression#高密度脂蛋白胆固醇|http://kgqa.cn/depression#鼾声",
+          "nursing_desc": "保持乐观愉快的情绪；合理作息；合理膳食"
+        }
+      ]
+    },
+    {
+      "idx": 12,
+      "cid": 6,
+      "question": "可以说说你推荐的微笑抑郁症的治疗方式吗？（饮食/检查/护理）",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 2676.08,
+      "pred_terms": [
+        "神经系统检查",
+        "大蒜",
+        "depression",
+        "葡萄柚",
+        "南瓜",
+        "kgqa",
+        "http",
+        "低脂牛奶",
+        "深水鱼",
+        "地塞米松抑制试验",
+        "含硒类食品",
+        "菠菜",
+        "香蕉",
+        "cn"
+      ],
+      "expected_terms": [
+        "低脂牛奶",
+        "南瓜",
+        "含硒类食品",
+        "大蒜",
+        "深水鱼",
+        "菠菜",
+        "地塞米松抑制试验",
+        "神经系统检查"
+      ],
+      "rows_preview": [
+        {
+          "food_suitability": "http://kgqa.cn/depression#菠菜|http://kgqa.cn/depression#葡萄柚|http://kgqa.cn/depression#香蕉|http://kgqa.cn/depression#低脂牛奶|http://kgqa.cn/depression#南瓜|http://kgqa.cn/depression#含硒类食品|http://kgqa.cn/depression#大蒜|http://kgqa.cn/depression#深水鱼",
+          "drug_treatments_desc": "",
+          "checks": "http://kgqa.cn/depression#地塞米松抑制试验|http://kgqa.cn/depression#神经系统检查",
+          "nursing_desc": ""
+        }
+      ]
+    },
+    {
+      "idx": 13,
+      "cid": 6,
+      "question": "产后抑郁症 的护理要点有哪些？（饮食/检查/护理）",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 2039.11,
+      "pred_terms": [
+        "酵母粉",
+        "http",
+        "羟色胺再吸收抑制剂",
+        "核桃",
+        "新鲜蔬果",
+        "香蕉",
+        "鸡蛋",
+        "麦芽",
+        "多普勒超声心动图",
+        "kgqa",
+        "社会学知识",
+        "应用抗抑郁症药",
+        "d为开始剂量",
+        "酪梨",
+        "谷类",
+        "柑橘类",
+        "粗粮",
+        "深绿色蔬菜",
+        "故可用于产褥期抑郁症",
+        "逐渐增至200mg",
+        "对孕妇在分娩过程中",
+        "1",
+        "例如帕罗西汀以20mg",
+        "草鱼",
+        "分娩常识",
+        "蘑菇",
+        "完善自我保健",
+        "优质肉类",
+        "逐渐增至150mg",
+        "豌豆",
+        "瘦肉",
+        "动物肝",
+        "全麦",
+        "cn",
+        "葵花子",
+        "心理护理",
+        "菠菜",
+        "药物治疗",
+        "荔枝",
+        "绿色蔬菜",
+        "这类药物优点为不进入乳汁中",
+        "牛奶",
+        "芝麻",
+        "葡萄柚",
+        "木瓜",
+        "逐渐增至50mg",
+        "主要是选择5",
+        "睡眠护理",
+        "大豆",
+        "减轻孕妇妊娠",
+        "d口服等",
+        "分娩的紧张",
+        "坚果类",
+        "日常护理",
+        "2",
+        "空心菜",
+        "恐惧心情",
+        "香瓜",
+        "深海鱼",
+        "depression",
+        "利用孕妇学校等多种渠道普及有关妊娠",
+        "食疗护理",
+        "红豆",
+        "一般护理",
+        "对于预防产褥期抑郁症有积极意义",
+        "阿米替林以50mg",
+        "d口服",
+        "口服",
+        "舍曲林以50mg",
+        "对症护理",
+        "三环类抗抑郁药等",
+        "氟西汀以20mg",
+        "d",
+        "加强对孕妇的精神关怀",
+        "多关心和爱护",
+        "马铃薯",
+        "逐渐增至80mg",
+        "运用医学心理学",
+        "南瓜子",
+        "猪肉",
+        "其他护理",
+        "花生",
+        "番茄"
+      ],
+      "expected_terms": [
+        "优质肉类",
+        "全麦",
+        "动物肝",
+        "南瓜子",
+        "坚果类",
+        "大豆",
+        "多普勒超声心动图"
+      ],
+      "rows_preview": [
+        {
+          "food_suitability": "http://kgqa.cn/depression#优质肉类|http://kgqa.cn/depression#全麦|http://kgqa.cn/depression#动物肝|http://kgqa.cn/depression#南瓜子|http://kgqa.cn/depression#坚果类|http://kgqa.cn/depression#大豆|http://kgqa.cn/depression#新鲜蔬果|http://kgqa.cn/depression#木瓜|http://kgqa.cn/depression#柑橘类|http://kgqa.cn/depression#核桃|http://kgqa.cn/depression#深海鱼|http://kgqa.cn/depression#深绿色蔬菜|http://kgqa.cn/depression#牛奶|http://kgqa.cn/depression#猪肉|http://kgqa.cn/depression#番茄|http://kgqa.cn/depression#瘦肉|http://kgqa.cn/depression#空心菜|http://kgqa.cn/depression#粗粮|http://kgqa.cn/depression#红豆|http://kgqa.cn/depression#绿色蔬菜|http://kgqa.cn/depression#芝麻|http://kgqa.cn/depression#花生|http://kgqa.cn/depression#草鱼|http://kgqa.cn/depression#荔枝|http://kgqa.cn/depression#菠菜|http://kgqa.cn/depression#葡萄柚|http://kgqa.cn/depression#葵花子|http://kgqa.cn/depression#蘑菇|http://kgqa.cn/depression#谷类|http://kgqa.cn/depression#豌豆|http://kgqa.cn/depression#酪梨|http://kgqa.cn/depression#酵母粉|http://kgqa.cn/depression#香瓜|http://kgqa.cn/depression#香蕉|http://kgqa.cn/depression#马铃薯|http://kgqa.cn/depression#鸡蛋|http://kgqa.cn/depression#麦芽",
+          "drug_treatments_desc": "药物治疗：应用抗抑郁症药，主要是选择5-羟色胺再吸收抑制剂、三环类抗抑郁药等。例如帕罗西汀以20mg/d为开始剂量，逐渐增至50mg/d 口服;舍曲林以50mg/d为开始剂量，逐渐增至200mg/d口服;氟西汀以20mg/d为开始剂量，逐渐增至80mg/d口服;阿米替林以50mg/d为开始剂量，逐渐增至150mg/d口服等。这类药物优点为不进入乳汁中，故可用于产褥期抑郁症。",
+          "checks": "http://kgqa.cn/depression#多普勒超声心动图",
+          "nursing_desc": "1、加强对孕妇的精神关怀，利用孕妇学校等多种渠道普及有关妊娠、分娩常识，减轻孕妇妊娠，分娩的紧张、恐惧心情，完善自我保健;\n2、运用医学心理学、社会学知识.对孕妇在分娩过程中，多关心和爱护，对于预防产褥期抑郁症有积极意义。|对症护理；一般护理；日常护理；睡眠护理；心理护理；食疗护理；其他护理"
+        }
+      ]
+    },
+    {
+      "idx": 14,
+      "cid": 6,
+      "question": "抑郁性神经症 的护理要点有哪些？（饮食/检查/护理）",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 2502.41,
+      "pred_terms": [
+        "深海鱼",
+        "同时患者存在精神与体力的不足与疲劳感",
+        "大蒜",
+        "健康体检",
+        "depression",
+        "樱桃",
+        "低脂牛奶",
+        "http",
+        "成为他人的负担",
+        "香蕉",
+        "如觉得不如人",
+        "无前途等",
+        "葡萄柚",
+        "可获得理想效果",
+        "kgqa",
+        "抑郁性神经症通常由心理事件引起",
+        "对这些观念需进行矫正",
+        "通常采用认知纠正技术",
+        "全麦面包",
+        "南瓜",
+        "病后患者伴忧郁情绪有众多不合理观念",
+        "cn",
+        "鸡肉",
+        "可以通过喊叫等发泄方式振奋其精神及体能",
+        "药物协助提高情绪对治疗大有好处",
+        "自身无价值",
+        "菠菜",
+        "抑郁性神经症经过系统的认知结合药物等治疗",
+        "故此治疗时要设法改变患者对事件的错误想法",
+        "在疾病初期患者对事件常耿耿于怀"
+      ],
+      "expected_terms": [
+        "低脂牛奶",
+        "全麦面包",
+        "南瓜",
+        "大蒜",
+        "樱桃",
+        "深海鱼",
+        "健康体检",
+        "抑郁性神经症通常由心理事件引起，在疾病初期患者对事件常耿耿于怀，故此治疗时要设法改变患者对事件的错误想法。病后患者伴忧郁情绪有众多不合理观念，如觉得不如人、自身无价值、成为他人的负担、无前途等。对这些观念需进行矫正，通常采用认知纠正技术。同时患者存在精神与体力的不足与疲劳感，可以通过喊叫等发泄方式振奋其精神及体能。药物协助提高情绪对治疗大有好处。抑郁性神经症经过系统的认知结合药物等治疗，可获得理想效果。"
+      ],
+      "rows_preview": [
+        {
+          "food_suitability": "http://kgqa.cn/depression#深海鱼|http://kgqa.cn/depression#菠菜|http://kgqa.cn/depression#葡萄柚|http://kgqa.cn/depression#香蕉|http://kgqa.cn/depression#全麦面包|http://kgqa.cn/depression#低脂牛奶|http://kgqa.cn/depression#南瓜|http://kgqa.cn/depression#大蒜|http://kgqa.cn/depression#樱桃|http://kgqa.cn/depression#鸡肉",
+          "drug_treatments_desc": "",
+          "checks": "http://kgqa.cn/depression#健康体检",
+          "nursing_desc": "抑郁性神经症通常由心理事件引起，在疾病初期患者对事件常耿耿于怀，故此治疗时要设法改变患者对事件的错误想法。病后患者伴忧郁情绪有众多不合理观念，如觉得不如人、自身无价值、成为他人的负担、无前途等。对这些观念需进行矫正，通常采用认知纠正技术。同时患者存在精神与体力的不足与疲劳感，可以通过喊叫等发泄方式振奋其精神及体能。药物协助提高情绪对治疗大有好处。抑郁性神经症经过系统的认知结合药物等治疗，可获得理想效果。"
+        }
+      ]
+    },
+    {
+      "idx": 15,
+      "cid": 7,
+      "question": "微笑抑郁症 的典型症状有哪些？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 877.54,
+      "pred_terms": [
+        "悲伤",
+        "怀疑自我",
+        "压抑",
+        "非常自卑",
+        "无奈",
+        "忧愁",
+        "悲哀",
+        "情绪失调",
+        "苦恼",
+        "强颜欢笑",
+        "困惑"
+      ],
+      "expected_terms": [
+        "压抑",
+        "困惑",
+        "强颜欢笑",
+        "忧愁",
+        "怀疑自我",
+        "悲伤",
+        "悲哀",
+        "情绪失调",
+        "无奈",
+        "苦恼"
+      ],
+      "rows_preview": [
+        {
+          "symptom": "压抑"
+        },
+        {
+          "symptom": "困惑"
+        },
+        {
+          "symptom": "强颜欢笑"
+        }
+      ]
+    },
+    {
+      "idx": 16,
+      "cid": 7,
+      "question": "抑郁性神经症有哪些症状？",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 2157.34,
+      "pred_terms": [
+        "消沉",
+        "腹泻",
+        "头痛",
+        "心情不畅",
+        "便秘",
+        "缺乏信心",
+        "无热情",
+        "四肢痛",
+        "背痛",
+        "心烦易激惹",
+        "精神不振",
+        "有轻生念头",
+        "失眠",
+        "能力减退感",
+        "疲乏",
+        "胃部不适",
+        "思考困难感",
+        "躁狂与昏睡交替",
+        "抑郁性神经症症状说明",
+        "沮丧",
+        "假笑"
+      ],
+      "expected_terms": [
+        "便秘",
+        "假笑",
+        "四肢痛",
+        "失眠",
+        "头痛",
+        "心情不畅",
+        "心烦易激惹",
+        "思考困难感",
+        "抑郁性神经症症状说明",
+        "无热情"
+      ],
+      "rows_preview": [
+        {
+          "symptom": "便秘"
+        },
+        {
+          "symptom": "假笑"
+        },
+        {
+          "symptom": "四肢痛"
+        }
+      ]
+    },
+    {
+      "idx": 17,
+      "cid": 8,
+      "question": "诊断 绝经抑郁症 常用哪些检查？",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 1745.63,
+      "pred_terms": [
+        "鼾声",
+        "低密度脂蛋白胆固醇",
+        "血液透析",
+        "睡眠效率",
+        "心电活动",
+        "睡眠潜伏期",
+        "凝血酶原时间",
+        "睡眠进程",
+        "性激素六项检查相关症状",
+        "肝肾功能检查",
+        "睡眠时间",
+        "三酰甘油",
+        "血小板",
+        "性激素六项检查",
+        "高密度脂蛋白胆固醇",
+        "颌肌电活动",
+        "血红蛋白",
+        "凝血酶时间",
+        "血氧饱和度",
+        "透析",
+        "脑电活动",
+        "血脂水平测量",
+        "胸腹运动",
+        "测量腹围",
+        "血清总胆固醇",
+        "双侧眼电活动",
+        "睡眠结构",
+        "纤维蛋白原",
+        "平均血氧饱和度",
+        "口鼻气流"
+      ],
+      "expected_terms": [
+        "三酰甘油",
+        "低密度脂蛋白胆固醇",
+        "凝血酶原时间",
+        "凝血酶时间",
+        "双侧眼电活动",
+        "口鼻气流",
+        "平均血氧饱和度",
+        "心电活动",
+        "性激素六项检查",
+        "性激素六项检查相关症状"
+      ],
+      "rows_preview": [
+        {
+          "check_item": ""
+        },
+        {
+          "check_item": "三酰甘油"
+        },
+        {
+          "check_item": "低密度脂蛋白胆固醇"
+        }
+      ]
+    },
+    {
+      "idx": 18,
+      "cid": 8,
+      "question": "我想知道我有没有得微笑抑郁症，你推荐我应该查些什么？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1282.93,
+      "pred_terms": [
+        "地塞米松抑制试验",
+        "神经系统检查"
+      ],
+      "expected_terms": [
+        "地塞米松抑制试验",
+        "神经系统检查"
+      ],
+      "rows_preview": [
+        {
+          "check_item": "地塞米松抑制试验"
+        },
+        {
+          "check_item": "神经系统检查"
+        }
+      ]
+    },
+    {
+      "idx": 19,
+      "cid": 8,
+      "question": "诊断产后抑郁症常用哪些检查？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1090.28,
+      "pred_terms": [
+        "多普勒超声心动图"
+      ],
+      "expected_terms": [
+        "多普勒超声心动图"
+      ],
+      "rows_preview": [
+        {
+          "check_item": "多普勒超声心动图"
+        }
+      ]
+    },
+    {
+      "idx": 20,
+      "cid": 8,
+      "question": "做哪些检查能判断我有没有得抑郁性神经症？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1423.56,
+      "pred_terms": [
+        "健康体检"
+      ],
+      "expected_terms": [
+        "健康体检"
+      ],
+      "rows_preview": [
+        {
+          "check_item": "健康体检"
+        }
+      ]
+    },
+    {
+      "idx": 21,
+      "cid": 9,
+      "question": "请给出 Fluoxetine 的关键信息（药物类型、用途等）。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1787.2,
+      "pred_terms": [
+        "addition",
+        "depression",
+        "drug",
+        "is",
+        "intended",
+        "manage",
+        "1987",
+        "atc",
+        "n06ca03",
+        "was",
+        "treatment",
+        "n06ab03",
+        "initially",
+        "various",
+        "and",
+        "generation",
+        "gained",
+        "to",
+        "code",
+        "a181673",
+        "commonly",
+        "categorized",
+        "fda",
+        "it",
+        "2nd",
+        "as",
+        "today",
+        "serotonin",
+        "prescribed",
+        "other",
+        "a",
+        "for",
+        "ssri",
+        "approval",
+        "molecule",
+        "small",
+        "in",
+        "type",
+        "reuptake",
+        "antidepressant",
+        "the",
+        "of",
+        "pathologies",
+        "although",
+        "l7721",
+        "inhibitor",
+        "selective",
+        "fluoxetine"
+      ],
+      "expected_terms": [
+        "Drug type: small molecule",
+        "ATC code: N06AB03"
+      ],
+      "rows_preview": [
+        {
+          "fact": "Fluoxetine is a 2nd generation antidepressant categorized as a selective serotonin reuptake inhibitor (SSRI).[A181673] It gained FDA approval in 1987 and although it was initially intended for the treatment of depression, today it is commonly prescribed to manage depression in addition to various other pathologies.[L7721]"
+        },
+        {
+          "fact": "Drug type: small molecule"
+        },
+        {
+          "fact": "ATC code: N06AB03"
+        }
+      ]
+    },
+    {
+      "idx": 22,
+      "cid": 9,
+      "question": "Maprotiline是什么？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1272.99,
+      "pred_terms": [
+        "dysthymic",
+        "effective",
+        "affective",
+        "depression",
+        "is",
+        "drug",
+        "antidepressants",
+        "at",
+        "symptoms",
+        "pharmacological",
+        "does",
+        "disorders",
+        "block",
+        "depressive",
+        "associated",
+        "atc",
+        "treat",
+        "norepinephrine",
+        "activity",
+        "n06aa21",
+        "differs",
+        "possesses",
+        "anxiety",
+        "and",
+        "not",
+        "major",
+        "some",
+        "neuronal",
+        "with",
+        "properties",
+        "inhibits",
+        "tetracyclic",
+        "affect",
+        "that",
+        "to",
+        "tricyclic",
+        "be",
+        "disorder",
+        "neurosis",
+        "code",
+        "appear",
+        "may",
+        "including",
+        "oxidase",
+        "monoamine",
+        "it",
+        "serotonin",
+        "maprotiline",
+        "used",
+        "anticholinergic",
+        "tcas",
+        "from",
+        "a",
+        "reducing",
+        "molecule",
+        "small",
+        "similar",
+        "in",
+        "type",
+        "reuptake",
+        "antidepressant",
+        "of"
+      ],
+      "expected_terms": [
+        "Drug type: small molecule",
+        "ATC code: N06AA21",
+        "Maprotiline is a tetracyclic antidepressant with similar pharmacological properties to tricyclic antidepressants (TCAs). Similar to TCAs",
+        "maprotiline inhibits neuronal norepinephrine reuptake",
+        "possesses some anticholinergic activity",
+        "and does not affect monoamine oxidase activity. It differs from TCAs in that it does not appear to block serotonin reuptake. Maprotiline may be used to treat depressive affective disorders",
+        "including dysthymic disorder (depressive neurosis) and major depressive disorder. Maprotiline is effective at reducing symptoms of anxiety associated with depression."
+      ],
+      "rows_preview": [
+        {
+          "fact": "Maprotiline is a tetracyclic antidepressant with similar pharmacological properties to tricyclic antidepressants (TCAs). Similar to TCAs, maprotiline inhibits neuronal norepinephrine reuptake, possesses some anticholinergic activity, and does not affect monoamine oxidase activity. It differs from TCAs in that it does not appear to block serotonin reuptake. Maprotiline may be used to treat depressive affective disorders, including dysthymic disorder (depressive neurosis) and major depressive disorder. Maprotiline is effective at reducing symptoms of anxiety associated with depression."
+        },
+        {
+          "fact": "Drug type: small molecule"
+        },
+        {
+          "fact": "ATC code: N06AA21"
+        }
+      ]
+    },
+    {
+      "idx": 23,
+      "cid": 9,
+      "question": "Paroxetine是干什么用的。",
+      "ok": false,
+      "reason": "cid_not_found",
+      "latency_ms": 1085.97,
+      "pred_terms": [],
+      "expected_terms": [
+        "Drug type: small molecule",
+        "ATC code: N06AB05"
+      ],
+      "rows_preview": []
+    },
+    {
+      "idx": 24,
+      "cid": 9,
+      "question": "请给出 舍曲林 的关键信息（药物类型、用途等）。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1508.38,
+      "pred_terms": [
+        "cause",
+        "sertraline",
+        "drug",
+        "are",
+        "is",
+        "or",
+        "classes",
+        "displays",
+        "levels",
+        "required",
+        "antidepressants",
+        "citalopram",
+        "medication",
+        "n06ab06",
+        "than",
+        "pharmacological",
+        "marked",
+        "therapy",
+        "atc",
+        "differences",
+        "such",
+        "frequently",
+        "known",
+        "which",
+        "several",
+        "and",
+        "between",
+        "drugs",
+        "with",
+        "be",
+        "enhanced",
+        "to",
+        "despite",
+        "code",
+        "before",
+        "a1846",
+        "structural",
+        "tolerability",
+        "exert",
+        "weeks",
+        "popular",
+        "commonly",
+        "may",
+        "ssris",
+        "as",
+        "vision",
+        "serotonin",
+        "compounds",
+        "t28",
+        "effects",
+        "undesirable",
+        "other",
+        "a",
+        "safety",
+        "noticed",
+        "ssri",
+        "drowsiness",
+        "a187075",
+        "molecule",
+        "small",
+        "similar",
+        "in",
+        "this",
+        "class",
+        "reuptake",
+        "high",
+        "type",
+        "antidepressant",
+        "beneficial",
+        "of",
+        "dizziness",
+        "blurred",
+        "inhibitor",
+        "selective",
+        "fluoxetine"
+      ],
+      "expected_terms": [
+        "small molecule"
+      ],
+      "rows_preview": [
+        {
+          "fact": "Sertraline is a popular antidepressant medication commonly known as a selective serotonin reuptake inhibitor (SSRI), and is similar to drugs such as [Citalopram] and [Fluoxetine]. Despite marked structural differences between compounds in this drug class, SSRIs exert similar pharmacological effects.\n\nSeveral weeks of therapy with sertraline may be required before beneficial effects are noticed. Sertraline displays enhanced safety or tolerability than other classes of antidepressants, which frequently cause high levels of drowsiness, dizziness, blurred vision, and other undesirable effects.[A1846,A187075,T28]"
+        },
+        {
+          "fact": "Drug type: small molecule"
+        },
+        {
+          "fact": "ATC code: N06AB06"
+        }
+      ]
+    },
+    {
+      "idx": 25,
+      "cid": 9,
+      "question": "请给出 Mirtazapine 的关键信息（药物类型、用途等）。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1047.64,
+      "pred_terms": [
+        "agent",
+        "inc",
+        "atc",
+        "initially",
+        "been",
+        "approved",
+        "off",
+        "disorder",
+        "week",
+        "vomiting",
+        "l6160",
+        "as",
+        "label",
+        "prevent",
+        "small",
+        "this",
+        "reported",
+        "t595",
+        "by",
+        "1",
+        "therapy",
+        "disorders",
+        "depressive",
+        "various",
+        "surgery",
+        "mirtazapine",
+        "a177811",
+        "tetracyclic",
+        "may",
+        "fda",
+        "medical",
+        "_piperazino",
+        "early",
+        "other",
+        "weight",
+        "a",
+        "1994",
+        "nausea",
+        "the",
+        "beneficial",
+        "neurological",
+        "is",
+        "after",
+        "a177946",
+        "symptoms",
+        "1997",
+        "conditions",
+        "treatment",
+        "management",
+        "observed",
+        "and",
+        "be",
+        "a178144",
+        "reverse",
+        "to",
+        "code",
+        "has",
+        "improve",
+        "effects",
+        "approval",
+        "molecule",
+        "mdd",
+        "type",
+        "received",
+        "l6157",
+        "addition",
+        "drug",
+        "depression",
+        "its",
+        "first",
+        "netherlands",
+        "was",
+        "efficacious",
+        "beginning",
+        "major",
+        "n06ax11",
+        "that",
+        "sleep",
+        "it",
+        "manufactured",
+        "azepine_",
+        "for",
+        "organon",
+        "in",
+        "antidepressant",
+        "of",
+        "loss",
+        "caused"
+      ],
+      "expected_terms": [
+        "Drug type: small molecule",
+        "ATC code: N06AX11"
+      ],
+      "rows_preview": [
+        {
+          "fact": "Mirtazapine is a tetracyclic _piperazino-azepine_ antidepressant agent that was initially approved for the treatment of major depressive disorder (MDD) in the Netherlands in 1994.[A177946] This drug was first manufactured by Organon Inc., and received FDA approval in 1997 for the treatment of major depressive disorder.[T595, L6157] The effects of this drug may be observed as early as 1 week after beginning therapy.[A178144,L6160]\n\nIn addition to its beneficial effects in depression, mirtazapine has been reported to be efficacious in the off-label management of various other conditions.  It may improve the symptoms of neurological disorders, reverse weight loss caused by medical conditions, improve sleep, and prevent nausea and vomiting after surgery.[A177811]"
+        },
+        {
+          "fact": "Drug type: small molecule"
+        },
+        {
+          "fact": "ATC code: N06AX11"
+        }
+      ]
+    },
+    {
+      "idx": 26,
+      "cid": 10,
+      "question": "氟西汀 相关的研究出版物有哪些（PMID）？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 945.39,
+      "pred_terms": [
+        "17356573",
+        "9323519",
+        "17486443",
+        "18371935",
+        "17335951",
+        "11270912",
+        "19211989",
+        "16967046",
+        "11453896",
+        "11082448",
+        "10997938",
+        "18083778",
+        "9050901",
+        "12649369",
+        "21718296",
+        "18537573",
+        "22707017",
+        "11752352",
+        "14709940",
+        "29083803",
+        "15272206",
+        "19442216",
+        "16910628",
+        "12172343",
+        "9384467",
+        "1586402",
+        "17289086",
+        "10192756",
+        "11963641",
+        "21095492",
+        "7623609",
+        "19561732",
+        "3554156",
+        "11752104",
+        "9050900",
+        "30301727",
+        "3262026",
+        "9537821"
+      ],
+      "expected_terms": [
+        "10192756"
+      ],
+      "rows_preview": [
+        {
+          "pub_node": "PubMed_10192756",
+          "pmid": "10192756"
+        },
+        {
+          "pub_node": "PubMed_10997938",
+          "pmid": "10997938"
+        },
+        {
+          "pub_node": "PubMed_11082448",
+          "pmid": "11082448"
+        }
+      ]
+    },
+    {
+      "idx": 27,
+      "cid": 10,
+      "question": "有关于马普替林的文献吗（PMID）？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1128.38,
+      "pred_terms": [
+        "20141432",
+        "17068778",
+        "6115693",
+        "6297650",
+        "9589848",
+        "6146381",
+        "17984940",
+        "6118411",
+        "10997731",
+        "3368020",
+        "12573515",
+        "7221567",
+        "8018460",
+        "2870173",
+        "7461027",
+        "1353628",
+        "37713619",
+        "6086881",
+        "15378668",
+        "7052344",
+        "12071336"
+      ],
+      "expected_terms": [
+        "10997731"
+      ],
+      "rows_preview": [
+        {
+          "pub_node": "PubMed_10997731",
+          "pmid": "10997731"
+        },
+        {
+          "pub_node": "PubMed_12071336",
+          "pmid": "12071336"
+        },
+        {
+          "pub_node": "PubMed_12573515",
+          "pmid": "12573515"
+        }
+      ]
+    },
+    {
+      "idx": 28,
+      "cid": 10,
+      "question": "有什么论文是讲帕罗西汀的吗？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1084.48,
+      "pred_terms": [
+        "18537577",
+        "25943764",
+        "11530128",
+        "11910269",
+        "19515014",
+        "8834412",
+        "16163406",
+        "9817620",
+        "16272179",
+        "20007670",
+        "18345955",
+        "7855217",
+        "30606186",
+        "8384945",
+        "9333110",
+        "10627793",
+        "14566196",
+        "20846463",
+        "12649369",
+        "25974703",
+        "25750618",
+        "17101742",
+        "7959522",
+        "27032980",
+        "11203183",
+        "12421645",
+        "22278095",
+        "29955445",
+        "24966680",
+        "28711716",
+        "8880055",
+        "22435778",
+        "8968657",
+        "9384467",
+        "15502598",
+        "23338224",
+        "21121774",
+        "27695623",
+        "14690877",
+        "10980326",
+        "10192756",
+        "12923828",
+        "10869387",
+        "16620364",
+        "25617872",
+        "9690692",
+        "12359676",
+        "25342944",
+        "15014729",
+        "11403977",
+        "26180025",
+        "10987842",
+        "15961125",
+        "29274752",
+        "10997936",
+        "27738376",
+        "2962217",
+        "5821956",
+        "9537821",
+        "11136637"
+      ],
+      "expected_terms": [
+        "10192756"
+      ],
+      "rows_preview": [
+        {
+          "pub_node": "PubMed_10192756",
+          "pmid": "10192756"
+        },
+        {
+          "pub_node": "PubMed_10627793",
+          "pmid": "10627793"
+        },
+        {
+          "pub_node": "PubMed_10869387",
+          "pmid": "10869387"
+        }
+      ]
+    },
+    {
+      "idx": 29,
+      "cid": 10,
+      "question": "给我Sertraline相关的研究？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 2401.91,
+      "pred_terms": [
+        "8831113",
+        "8808373",
+        "15547048",
+        "11243491",
+        "12151556",
+        "26471709",
+        "10575045",
+        "23468867",
+        "19211989",
+        "20021354",
+        "2842321",
+        "30544429",
+        "9808077",
+        "17046718",
+        "12649369",
+        "23086945",
+        "9786310",
+        "1281075",
+        "9643617",
+        "17101742",
+        "18664165",
+        "8573661",
+        "14709940",
+        "15181382",
+        "11996015",
+        "7859236",
+        "9307345",
+        "24966680",
+        "12452737",
+        "16910628",
+        "27432886",
+        "8861776",
+        "8968657",
+        "25155462",
+        "9384467",
+        "15606893",
+        "9068934",
+        "11963641",
+        "20091586",
+        "17187269",
+        "21928040",
+        "18751896",
+        "12955294",
+        "19022290",
+        "20012264",
+        "37713619",
+        "10211919",
+        "20438757",
+        "12143142",
+        "16963794",
+        "9068933",
+        "26830411",
+        "21963369",
+        "10770145",
+        "12647451",
+        "9537821"
+      ],
+      "expected_terms": [
+        "10211919"
+      ],
+      "rows_preview": [
+        {
+          "pub_node": "PubMed_10211919",
+          "pmid": "10211919"
+        },
+        {
+          "pub_node": "PubMed_10575045",
+          "pmid": "10575045"
+        },
+        {
+          "pub_node": "PubMed_10770145",
+          "pmid": "10770145"
+        }
+      ]
+    },
+    {
+      "idx": 30,
+      "cid": 10,
+      "question": "有文献记载Mirtazapine吗？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1241.14,
+      "pred_terms": [
+        "17478791",
+        "4055881",
+        "12404669",
+        "17067560",
+        "11757992",
+        "30155392",
+        "11939713",
+        "22708686",
+        "15014675",
+        "16272179",
+        "14628003",
+        "24511451",
+        "26989965",
+        "15538128",
+        "8930006",
+        "22860241",
+        "23229983",
+        "23440470",
+        "20127940",
+        "15309042",
+        "23728612",
+        "29955558",
+        "27593622",
+        "9090576",
+        "11063897",
+        "16649829",
+        "22760168",
+        "26071050",
+        "16342227",
+        "10997935",
+        "24679990",
+        "10333982",
+        "11271412",
+        "9007838",
+        "9597349",
+        "11607047",
+        "10762339",
+        "9832994",
+        "22241371",
+        "16433010",
+        "12372565",
+        "17618721",
+        "18568129",
+        "17373882",
+        "19453203",
+        "9265949",
+        "19381036",
+        "10446735",
+        "28367128",
+        "29106542",
+        "22243688",
+        "37713619",
+        "19193341",
+        "19401164",
+        "14615872",
+        "10885584"
+      ],
+      "expected_terms": [
+        "10333982"
+      ],
+      "rows_preview": [
+        {
+          "pub_node": "PubMed_10333982",
+          "pmid": "10333982"
+        },
+        {
+          "pub_node": "PubMed_10446735",
+          "pmid": "10446735"
+        },
+        {
+          "pub_node": "PubMed_10762339",
+          "pmid": "10762339"
+        }
+      ]
+    },
+    {
+      "idx": 31,
+      "cid": 11,
+      "question": "请简要介绍 绝经抑郁症。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1547.77,
+      "pred_terms": [
+        "将明显改善此期妇女的生活质量",
+        "家庭结构变化",
+        "由于接近退休年龄",
+        "女性在绝经过渡期",
+        "绝经过渡期巨大的生理",
+        "反过来又可能加重家庭和社会负担",
+        "另外",
+        "心理上面临子女成家",
+        "可能出现明显的焦虑",
+        "随着年龄增长",
+        "即经前综合征",
+        "体形改变而失去自信",
+        "心血管疾病",
+        "注意力不集中等",
+        "绝经引起的情绪问题已日益受到妇产科",
+        "减轻社会和家庭的负担",
+        "社会角色发生改变",
+        "抑郁是一种情绪障碍",
+        "生理上从育龄期向老年期过渡",
+        "老年痴呆等一系列健康问题",
+        "若缺乏适应新情况",
+        "多半周期性地出现在月经来潮前数天",
+        "而在月经来潮后自然缓解",
+        "不少妇女在绝经前数年就已经出现轻微的情绪障碍",
+        "可能出现绝经症状以及骨质疏松",
+        "心理和社会角色的巨大变化",
+        "潮热和夜汗所导致的睡眠中断可明显影响次日的情绪",
+        "抑郁情绪",
+        "由此带来的心理压力不容忽视",
+        "进行合理的治疗",
+        "高脂血症",
+        "上述老年疾病也日益增多",
+        "心理和社会角色变化带来的情绪问题",
+        "将由几十年来熟悉和繁忙的岗位回到赋闲的家庭生活",
+        "性激素逐渐缺乏",
+        "精神科等领域的重视",
+        "开拓新环境的勇气",
+        "卵巢功能由旺盛走向衰退",
+        "在工作岗位上",
+        "为美好的晚年生活奠定坚实的基础",
+        "面临生理",
+        "抑郁",
+        "导致烦躁",
+        "或由于生育能力丧失",
+        "这些患者围绝经期抑郁症的发病危险可能增加"
+      ],
+      "expected_terms": [
+        "抑郁是一种情绪障碍，不少妇女在绝经前数年就已经出现轻微的情绪障碍。多半周期性地出现在月经来潮前数天，而在月经来潮后自然缓解，即经前综合征。这些患者围绝经期抑郁症的发病危险可能增加。另外，潮热和夜汗所导致的睡眠中断可明显影响次日的情绪，导致烦躁、抑郁、注意力不集中等。女性在绝经过渡期，面临生理、心理和社会角色的巨大变化。生理上从育龄期向老年期过渡，卵巢功能由旺盛走向衰退，性激素逐渐缺乏，可能出现绝经症状以及骨质疏松、高脂血症、心血管疾病、老年痴呆等一系列健康问题;心理上面临子女成家，家庭结构变化，或由于生育能力丧失、体形改变而失去自信;在工作岗位上，由于接近退休年龄，将由几十年来熟悉和繁忙的岗位回到赋闲的家庭生活，社会角色发生改变，若缺乏适应新情况、开拓新环境的勇气，可能出现明显的焦虑、抑郁情绪;随着年龄增长，上述老年疾病也日益增多，由此带来的心理压力不容忽视。绝经过渡期巨大的生理、心理和社会角色变化带来的情绪问题，反过来又可能加重家庭和社会负担。绝经引起的情绪问题已日益受到妇产科、精神科等领域的重视。进行合理的治疗，将明显改善此期妇女的生活质量，减轻社会和家庭的负担，为美好的晚年生活奠定坚实的基础。"
+      ],
+      "rows_preview": [
+        {
+          "description": "抑郁是一种情绪障碍，不少妇女在绝经前数年就已经出现轻微的情绪障碍。多半周期性地出现在月经来潮前数天，而在月经来潮后自然缓解，即经前综合征。这些患者围绝经期抑郁症的发病危险可能增加。另外，潮热和夜汗所导致的睡眠中断可明显影响次日的情绪，导致烦躁、抑郁、注意力不集中等。女性在绝经过渡期，面临生理、心理和社会角色的巨大变化。生理上从育龄期向老年期过渡，卵巢功能由旺盛走向衰退，性激素逐渐缺乏，可能出现绝经症状以及骨质疏松、高脂血症、心血管疾病、老年痴呆等一系列健康问题;心理上面临子女成家，家庭结构变化，或由于生育能力丧失、体形改变而失去自信;在工作岗位上，由于接近退休年龄，将由几十年来熟悉和繁忙的岗位回到赋闲的家庭生活，社会角色发生改变，若缺乏适应新情况、开拓新环境的勇气，可能出现明显的焦虑、抑郁情绪;随着年龄增长，上述老年疾病也日益增多，由此带来的心理压力不容忽视。绝经过渡期巨大的生理、心理和社会角色变化带来的情绪问题，反过来又可能加重家庭和社会负担。绝经引起的情绪问题已日益受到妇产科、精神科等领域的重视。进行合理的治疗，将明显改善此期妇女的生活质量，减轻社会和家庭的负担，为美好的晚年生活奠定坚实的基础。"
+        }
+      ]
+    },
+    {
+      "idx": 32,
+      "cid": 11,
+      "question": "微笑抑郁症是什么。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1233.59,
+      "pred_terms": [
+        "患者常常为了维护自己在别人心目中的美好形象",
+        "长此以往",
+        "还会诱发生理疾患",
+        "是多发生在都市白领身上的一种新型抑郁倾向",
+        "这不仅仅会导致心理疾病",
+        "强颜欢笑",
+        "微笑抑郁症",
+        "是抑郁症的一种",
+        "刻意掩饰自己的情绪"
+      ],
+      "expected_terms": [
+        "“微笑抑郁症”是抑郁症的一种，是多发生在都市白领身上的一种新型抑郁倾向。患者常常为了维护自己在别人心目中的美好形象，刻意掩饰自己的情绪，强颜欢笑。这不仅仅会导致心理疾病，长此以往，还会诱发生理疾患。"
+      ],
+      "rows_preview": [
+        {
+          "description": "“微笑抑郁症”是抑郁症的一种，是多发生在都市白领身上的一种新型抑郁倾向。患者常常为了维护自己在别人心目中的美好形象，刻意掩饰自己的情绪，强颜欢笑。这不仅仅会导致心理疾病，长此以往，还会诱发生理疾患。"
+        }
+      ]
+    },
+    {
+      "idx": 33,
+      "cid": 11,
+      "question": "产后抑郁症你听吗？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1201.4,
+      "pred_terms": [
+        "postparturm",
+        "悲伤",
+        "其产生的原因不明",
+        "是指产妇在分娩后出现抑郁",
+        "depression",
+        "通常在产后2周出现",
+        "分娩及社会因素有关",
+        "沮丧",
+        "产后抑郁症",
+        "心理",
+        "可能与遗传",
+        "甚至有自杀或杀婴倾向等一系列症状为特征的心理障碍",
+        "是产褥期精神综合征中最常见的一种类型",
+        "ppd",
+        "暴躁",
+        "烦躁",
+        "易激怒",
+        "大哭大闹"
+      ],
+      "expected_terms": [
+        "产后抑郁症(postparturm depression，PPD)是指产妇在分娩后出现抑郁、悲伤、暴躁、沮丧、大哭大闹、易激怒、烦躁，甚至有自杀或杀婴倾向等一系列症状为特征的心理障碍，是产褥期精神综合征中最常见的一种类型。通常在产后2周出现，其产生的原因不明，可能与遗传，心理、分娩及社会因素有关。"
+      ],
+      "rows_preview": [
+        {
+          "description": "产后抑郁症(postparturm depression，PPD)是指产妇在分娩后出现抑郁、悲伤、暴躁、沮丧、大哭大闹、易激怒、烦躁，甚至有自杀或杀婴倾向等一系列症状为特征的心理障碍，是产褥期精神综合征中最常见的一种类型。通常在产后2周出现，其产生的原因不明，可能与遗传，心理、分娩及社会因素有关。"
+        }
+      ]
+    },
+    {
+      "idx": 34,
+      "cid": 11,
+      "question": "说一下更年期抑郁症。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1246.36,
+      "pred_terms": [
+        "发热",
+        "腹泻",
+        "depression",
+        "明显高于其他年龄段不能适应新的生活环境变化",
+        "的人罹患本病",
+        "更年期抑郁症临床上女性最为常见",
+        "如迁居离开久居的老地方",
+        "60岁",
+        "女新家庭一起生活或丧偶独自生活等等",
+        "对预防本病的发生",
+        "发展十分必要",
+        "便秘",
+        "据报道女性进入更年期",
+        "眩晕",
+        "男性更年期在55",
+        "食欲减退",
+        "疲乏无力",
+        "lnvolutional",
+        "到陌生的新环境",
+        "内分泌检查功能异常",
+        "因此",
+        "上腹部不适",
+        "脉搏增快或减慢",
+        "心悸",
+        "指发生于更年期的抑郁障碍",
+        "紧张不安",
+        "女性更年期在45",
+        "本病主要表现为情绪低落",
+        "55岁",
+        "月经变化以及睡眠障碍",
+        "约有46",
+        "更年期抑郁症",
+        "发冷",
+        "正确认识本病的促发因素",
+        "四肢麻木",
+        "以及某些社会心理因素的影响有关",
+        "临床症状为主要表现",
+        "性欲减退",
+        "血压改变",
+        "需采用心理治疗和药物治疗等方式来缓解",
+        "胸闷",
+        "乏力等",
+        "可能与内分泌及性腺功能减退",
+        "随儿",
+        "对生活多丧失信心以及躯体不适等症状",
+        "口干"
+      ],
+      "expected_terms": [
+        "更年期抑郁症 (lnvolutional Depression) 指发生于更年期的抑郁障碍，男性更年期在55-60岁，女性更年期在45~55岁，可能与内分泌及性腺功能减退，以及某些社会心理因素的影响有关。本病主要表现为情绪低落、疲乏无力、紧张不安，对生活多丧失信心以及躯体不适等症状，需采用心理治疗和药物治疗等方式来缓解。更年期抑郁症临床上女性最为常见。据报道女性进入更年期，约有46%的人罹患本病，明显高于其他年龄段不能适应新的生活环境变化，如迁居离开久居的老地方，到陌生的新环境;随儿、女新家庭一起生活或丧偶独自生活等等。因此，正确认识本病的促发因素，对预防本病的发生、发展十分必要。临床症状为主要表现：食欲减退、上腹部不适、口干、便秘、腹泻、心悸、血压改变、脉搏增快或减慢、胸闷、四肢麻木、发冷、发热、性欲减退、月经变化以及睡眠障碍、眩晕、乏力等 内分泌检查功能异常。"
+      ],
+      "rows_preview": [
+        {
+          "description": "更年期抑郁症 (lnvolutional Depression) 指发生于更年期的抑郁障碍，男性更年期在55-60岁，女性更年期在45~55岁，可能与内分泌及性腺功能减退，以及某些社会心理因素的影响有关。本病主要表现为情绪低落、疲乏无力、紧张不安，对生活多丧失信心以及躯体不适等症状，需采用心理治疗和药物治疗等方式来缓解。更年期抑郁症临床上女性最为常见。据报道女性进入更年期，约有46%的人罹患本病，明显高于其他年龄段不能适应新的生活环境变化，如迁居离开久居的老地方，到陌生的新环境;随儿、女新家庭一起生活或丧偶独自生活等等。因此，正确认识本病的促发因素，对预防本病的发生、发展十分必要。临床症状为主要表现：食欲减退、上腹部不适、口干、便秘、腹泻、心悸、血压改变、脉搏增快或减慢、胸闷、四肢麻木、发冷、发热、性欲减退、月经变化以及睡眠障碍、眩晕、乏力等 内分泌检查功能异常。"
+        }
+      ]
+    },
+    {
+      "idx": 35,
+      "cid": 11,
+      "question": "请简要介绍抑郁性神经症。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1353.09,
+      "pred_terms": [
+        "1",
+        "但无明显的运动性抑制或精神病情症状",
+        "提示本病患病率较高",
+        "占神经症的70",
+        "躯体不适感和睡眠障碍",
+        "患者有治疗要求",
+        "depressive",
+        "6",
+        "neurosis",
+        "据全国12地区神经症流行病学调查发现本病的患病率为3",
+        "对某县医院门诊的调查报告占神经症的27",
+        "抑郁性神经症",
+        "2",
+        "女性多见",
+        "又称心境恶劣障碍",
+        "8",
+        "据华西医科大学精神科报告抑郁性神经症患者占精神科门诊患者的21",
+        "常伴有焦虑",
+        "指一种以持久的心境低落状态为特征的神经症",
+        "生活不受严重影响"
+      ],
+      "expected_terms": [
+        "抑郁性神经症（depressive neurosis）又称心境恶劣障碍。指一种以持久的心境低落状态为特征的神经症，常伴有焦虑、躯体不适感和睡眠障碍，患者有治疗要求，但无明显的运动性抑制或精神病情症状，生活不受严重影响。据全国12地区神经症流行病学调查发现本病的患病率为3.1‰。据华西医科大学精神科报告抑郁性神经症患者占精神科门诊患者的21.2%，占神经症的70.6%。对某县医院门诊的调查报告占神经症的27.8%，提示本病患病率较高。女性多见。"
+      ],
+      "rows_preview": [
+        {
+          "description": "抑郁性神经症（depressive neurosis）又称心境恶劣障碍。指一种以持久的心境低落状态为特征的神经症，常伴有焦虑、躯体不适感和睡眠障碍，患者有治疗要求，但无明显的运动性抑制或精神病情症状，生活不受严重影响。据全国12地区神经症流行病学调查发现本病的患病率为3.1‰。据华西医科大学精神科报告抑郁性神经症患者占精神科门诊患者的21.2%，占神经症的70.6%。对某县医院门诊的调查报告占神经症的27.8%，提示本病患病率较高。女性多见。"
+        }
+      ]
+    },
+    {
+      "idx": 36,
+      "cid": 1,
+      "question": "Maprotiline 的适应症/适应证包括哪些？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1288.19,
+      "pred_terms": [
+        "depression",
+        "helpful",
+        "involutional",
+        "suffering",
+        "depressive",
+        "treatment",
+        "certain",
+        "melancholia",
+        "and",
+        "be",
+        "treating",
+        "neurosis",
+        "patients",
+        "also",
+        "severe",
+        "may",
+        "including",
+        "for",
+        "bipolar",
+        "in",
+        "phase",
+        "psychotic",
+        "the",
+        "of",
+        "depressed"
+      ],
+      "expected_terms": [
+        "For treatment of depression",
+        "including the depressed phase of bipolar depression",
+        "psychotic depression",
+        "and involutional melancholia",
+        "and may also be helpful in treating certain patients suffering severe depressive neurosis."
+      ],
+      "rows_preview": [
+        {
+          "indication": "For treatment of depression, including the depressed phase of bipolar depression, psychotic depression, and involutional melancholia, and may also be helpful in treating certain patients suffering severe depressive neurosis."
+        }
+      ]
+    },
+    {
+      "idx": 37,
+      "cid": 1,
+      "question": "马普替林有哪些适应症？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1173.4,
+      "pred_terms": [
+        "depression",
+        "helpful",
+        "involutional",
+        "suffering",
+        "depressive",
+        "treatment",
+        "certain",
+        "melancholia",
+        "and",
+        "be",
+        "treating",
+        "neurosis",
+        "patients",
+        "also",
+        "severe",
+        "may",
+        "including",
+        "for",
+        "bipolar",
+        "in",
+        "phase",
+        "psychotic",
+        "the",
+        "of",
+        "depressed"
+      ],
+      "expected_terms": [
+        "For treatment of depression",
+        "including the depressed phase of bipolar depression",
+        "psychotic depression",
+        "and involutional melancholia",
+        "and may also be helpful in treating certain patients suffering severe depressive neurosis."
+      ],
+      "rows_preview": [
+        {
+          "indication": "For treatment of depression, including the depressed phase of bipolar depression, psychotic depression, and involutional melancholia, and may also be helpful in treating certain patients suffering severe depressive neurosis."
+        }
+      ]
+    },
+    {
+      "idx": 38,
+      "cid": 1,
+      "question": "氟西汀的适应症/适应证包括哪些？",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 1397.19,
+      "pred_terms": [
+        "independent",
+        "whether",
+        "depression",
+        "agoraphobia",
+        "is",
+        "nervosa",
+        "maintenance",
+        "indicated",
+        "i",
+        "resistant",
+        "depressive",
+        "compulsive",
+        "treat",
+        "treatment",
+        "bulimia",
+        "combination",
+        "l40833",
+        "female",
+        "acute",
+        "and",
+        "major",
+        "premenstrual",
+        "l7664",
+        "present",
+        "with",
+        "be",
+        "disorder",
+        "to",
+        "patients",
+        "only",
+        "also",
+        "dysphoric",
+        "may",
+        "it",
+        "olanzapine",
+        "both",
+        "used",
+        "panic",
+        "for",
+        "bipolar",
+        "however",
+        "additionally",
+        "obsessive",
+        "in",
+        "pmdd",
+        "the",
+        "of",
+        "related",
+        "fluoxetine"
+      ],
+      "expected_terms": [
+        "For treatment of depression",
+        "including the depressed phase of bipolar depression",
+        "psychotic depression",
+        "and involutional melancholia",
+        "and may also be helpful in treating certain patients suffering severe depressive neurosis."
+      ],
+      "rows_preview": [
+        {
+          "indication": "Fluoxetine is indicated for both acute and maintenance treatment of major depressive disorder, obsessive compulsive disorder, and bulimia nervosa; however, it is only indicated for acute treatment of panic disorder independent of whether agoraphobia is present.[L7664] Fluoxetine may also be used in combination with olanzapine to treat depression related to Bipolar I Disorder, and treatment resistant depression.[L7664] Fluoxetine is additionally indicated for the treatment of female patients with premenstrual dysphoric disorder (PMDD).[L40833]"
+        }
+      ]
+    },
+    {
+      "idx": 39,
+      "cid": 1,
+      "question": "帕罗西汀的适应症/适应证包括哪些？",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 1325.55,
+      "pred_terms": [
+        "ejaculation",
+        "a181754",
+        "depression",
+        "or",
+        "is",
+        "form",
+        "stress",
+        "indicated",
+        "symptoms",
+        "manage",
+        "paroxetine",
+        "compulsive",
+        "bowel",
+        "vasomotor",
+        "treatment",
+        "a181904",
+        "management",
+        "one",
+        "known",
+        "irritable",
+        "anxiety",
+        "menopause",
+        "off",
+        "be",
+        "disorder",
+        "to",
+        "ibs",
+        "premature",
+        "may",
+        "syndrome",
+        "posttraumatic",
+        "as",
+        "generalized",
+        "used",
+        "label",
+        "panic",
+        "a1093",
+        "commercially",
+        "social",
+        "for",
+        "brisdelle",
+        "l3358",
+        "moderate",
+        "obsessive",
+        "mild",
+        "the",
+        "of",
+        "l7703"
+      ],
+      "expected_terms": [
+        "For treatment of depression",
+        "including the depressed phase of bipolar depression",
+        "psychotic depression",
+        "and involutional melancholia",
+        "and may also be helpful in treating certain patients suffering severe depressive neurosis."
+      ],
+      "rows_preview": [
+        {
+          "indication": "Paroxetine is indicated for the management of depression, obsessive-compulsive disorder, panic disorder, social anxiety disorder, generalized anxiety disorder, posttraumatic stress disorder.[L3358] One form of paroxetine, commercially known as Brisdelle, is used to manage mild to moderate vasomotor symptoms of menopause.[L7703] Off-label, paroxetine may be used for the treatment of premature ejaculation or irritable bowel syndrome (IBS).[A1093,A181754,A181904]"
+        }
+      ]
+    },
+    {
+      "idx": 40,
+      "cid": 2,
+      "question": "马普替林有哪些常见副作用？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1781.9,
+      "pred_terms": [
+        "conduction",
+        "up",
+        "women",
+        "hypotension",
+        "tachycardia",
+        "depression",
+        "signs",
+        "convulsions",
+        "motor",
+        "mydriasis",
+        "ld",
+        "cyanosis",
+        "twitching",
+        "disturbances",
+        "900",
+        "tremor",
+        "and",
+        "deep",
+        "kg",
+        "include",
+        "shock",
+        "rigidity",
+        "to",
+        "vomiting",
+        "cardiac",
+        "mg",
+        "orally",
+        "impaired",
+        "overdose",
+        "unrest",
+        "90",
+        "50",
+        "rats",
+        "coma",
+        "arrhythmias",
+        "hyperpyrexia",
+        "vertigo",
+        "in",
+        "ataxia",
+        "consciousness",
+        "respiratory",
+        "of",
+        "muscular"
+      ],
+      "expected_terms": [
+        "运动性不安",
+        "肌肉抽搐",
+        "强直",
+        "震颤",
+        "共济失调",
+        "惊厥",
+        "高热",
+        "眩晕",
+        "瞳孔散大",
+        "呕吐",
+        "发绀",
+        "muscular twitching",
+        "rigidity",
+        "tremor",
+        "ataxia",
+        "convulsions",
+        "hyperpyrexia",
+        "vertigo",
+        "mydriasis",
+        "vomiting",
+        "cyanosis"
+      ],
+      "rows_preview": [
+        {
+          "side_effect_text": "LD<sub>50</sub>=~900 mg/kg (Orally in rats); LD<sub>50</sub>=90 mg/kg (Orally in women); Signs of overdose include motor unrest, muscular twitching and rigidity, tremor, ataxia, convulsions, hyperpyrexia, vertigo, mydriasis, vomiting, cyanosis, hypotension, shock, tachycardia, cardiac arrhythmias, impaired cardiac conduction, respiratory depression, and disturbances of consciousness up to deep coma."
+        }
+      ]
+    },
+    {
+      "idx": 41,
+      "cid": 2,
+      "question": "Maprotiline 的不良反应表现有哪些？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1179.22,
+      "pred_terms": [
+        "conduction",
+        "up",
+        "women",
+        "hypotension",
+        "tachycardia",
+        "depression",
+        "signs",
+        "convulsions",
+        "motor",
+        "mydriasis",
+        "ld",
+        "cyanosis",
+        "twitching",
+        "disturbances",
+        "900",
+        "tremor",
+        "and",
+        "deep",
+        "kg",
+        "include",
+        "shock",
+        "rigidity",
+        "to",
+        "vomiting",
+        "cardiac",
+        "mg",
+        "orally",
+        "impaired",
+        "overdose",
+        "unrest",
+        "90",
+        "50",
+        "rats",
+        "coma",
+        "arrhythmias",
+        "hyperpyrexia",
+        "vertigo",
+        "in",
+        "ataxia",
+        "consciousness",
+        "respiratory",
+        "of",
+        "muscular"
+      ],
+      "expected_terms": [
+        "LD<sub>50</sub>=~900 mg/kg (Orally in rats)",
+        "LD<sub>50</sub>=90 mg/kg (Orally in women)",
+        "Signs of overdose include motor unrest",
+        "muscular twitching and rigidity",
+        "tremor",
+        "ataxia",
+        "convulsions",
+        "hyperpyrexia",
+        "vertigo",
+        "mydriasis",
+        "vomiting",
+        "cyanosis",
+        "hypotension",
+        "shock",
+        "tachycardia",
+        "cardiac arrhythmias",
+        "impaired cardiac conduction",
+        "respiratory depression",
+        "and disturbances of consciousness up to deep coma."
+      ],
+      "rows_preview": [
+        {
+          "side_effect_text": "LD<sub>50</sub>=~900 mg/kg (Orally in rats); LD<sub>50</sub>=90 mg/kg (Orally in women); Signs of overdose include motor unrest, muscular twitching and rigidity, tremor, ataxia, convulsions, hyperpyrexia, vertigo, mydriasis, vomiting, cyanosis, hypotension, shock, tachycardia, cardiac arrhythmias, impaired cardiac conduction, respiratory depression, and disturbances of consciousness up to deep coma."
+        }
+      ]
+    },
+    {
+      "idx": 42,
+      "cid": 2,
+      "question": "使用马普替林后出现哪些不适需要警惕？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 2217.72,
+      "pred_terms": [
+        "conduction",
+        "up",
+        "women",
+        "hypotension",
+        "tachycardia",
+        "depression",
+        "signs",
+        "convulsions",
+        "motor",
+        "mydriasis",
+        "ld",
+        "cyanosis",
+        "twitching",
+        "disturbances",
+        "900",
+        "tremor",
+        "and",
+        "deep",
+        "kg",
+        "include",
+        "shock",
+        "rigidity",
+        "to",
+        "vomiting",
+        "cardiac",
+        "mg",
+        "orally",
+        "impaired",
+        "overdose",
+        "unrest",
+        "90",
+        "50",
+        "rats",
+        "coma",
+        "arrhythmias",
+        "hyperpyrexia",
+        "vertigo",
+        "in",
+        "ataxia",
+        "consciousness",
+        "respiratory",
+        "of",
+        "muscular"
+      ],
+      "expected_terms": [
+        "运动性不安",
+        "肌肉抽搐",
+        "强直",
+        "震颤",
+        "共济失调",
+        "惊厥",
+        "高热",
+        "眩晕",
+        "瞳孔散大",
+        "呕吐",
+        "发绀",
+        "muscular twitching",
+        "rigidity",
+        "tremor",
+        "ataxia",
+        "convulsions",
+        "hyperpyrexia",
+        "vertigo",
+        "mydriasis",
+        "vomiting",
+        "cyanosis"
+      ],
+      "rows_preview": [
+        {
+          "side_effect_text": "LD<sub>50</sub>=~900 mg/kg (Orally in rats); LD<sub>50</sub>=90 mg/kg (Orally in women); Signs of overdose include motor unrest, muscular twitching and rigidity, tremor, ataxia, convulsions, hyperpyrexia, vertigo, mydriasis, vomiting, cyanosis, hypotension, shock, tachycardia, cardiac arrhythmias, impaired cardiac conduction, respiratory depression, and disturbances of consciousness up to deep coma."
+        }
+      ]
+    },
+    {
+      "idx": 43,
+      "cid": 2,
+      "question": "请概括 Maprotiline 的典型副作用要点。",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1259.14,
+      "pred_terms": [
+        "conduction",
+        "up",
+        "women",
+        "hypotension",
+        "tachycardia",
+        "depression",
+        "signs",
+        "convulsions",
+        "motor",
+        "mydriasis",
+        "ld",
+        "cyanosis",
+        "twitching",
+        "disturbances",
+        "900",
+        "tremor",
+        "and",
+        "deep",
+        "kg",
+        "include",
+        "shock",
+        "rigidity",
+        "to",
+        "vomiting",
+        "cardiac",
+        "mg",
+        "orally",
+        "impaired",
+        "overdose",
+        "unrest",
+        "90",
+        "50",
+        "rats",
+        "coma",
+        "arrhythmias",
+        "hyperpyrexia",
+        "vertigo",
+        "in",
+        "ataxia",
+        "consciousness",
+        "respiratory",
+        "of",
+        "muscular"
+      ],
+      "expected_terms": [
+        "LD<sub>50</sub>=~900 mg/kg (Orally in rats)",
+        "LD<sub>50</sub>=90 mg/kg (Orally in women)",
+        "Signs of overdose include motor unrest",
+        "muscular twitching and rigidity",
+        "tremor",
+        "ataxia",
+        "convulsions",
+        "hyperpyrexia",
+        "vertigo",
+        "mydriasis",
+        "vomiting",
+        "cyanosis",
+        "hypotension",
+        "shock",
+        "tachycardia",
+        "cardiac arrhythmias",
+        "impaired cardiac conduction",
+        "respiratory depression",
+        "and disturbances of consciousness up to deep coma."
+      ],
+      "rows_preview": [
+        {
+          "side_effect_text": "LD<sub>50</sub>=~900 mg/kg (Orally in rats); LD<sub>50</sub>=90 mg/kg (Orally in women); Signs of overdose include motor unrest, muscular twitching and rigidity, tremor, ataxia, convulsions, hyperpyrexia, vertigo, mydriasis, vomiting, cyanosis, hypotension, shock, tachycardia, cardiac arrhythmias, impaired cardiac conduction, respiratory depression, and disturbances of consciousness up to deep coma."
+        }
+      ]
+    },
+    {
+      "idx": 44,
+      "cid": 2,
+      "question": "马普替林的不良反应清单（精简版）是什么？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1478.31,
+      "pred_terms": [
+        "conduction",
+        "up",
+        "women",
+        "hypotension",
+        "tachycardia",
+        "depression",
+        "signs",
+        "convulsions",
+        "motor",
+        "mydriasis",
+        "ld",
+        "cyanosis",
+        "twitching",
+        "disturbances",
+        "900",
+        "tremor",
+        "and",
+        "deep",
+        "kg",
+        "include",
+        "shock",
+        "rigidity",
+        "to",
+        "vomiting",
+        "cardiac",
+        "mg",
+        "orally",
+        "impaired",
+        "overdose",
+        "unrest",
+        "90",
+        "50",
+        "rats",
+        "coma",
+        "arrhythmias",
+        "hyperpyrexia",
+        "vertigo",
+        "in",
+        "ataxia",
+        "consciousness",
+        "respiratory",
+        "of",
+        "muscular"
+      ],
+      "expected_terms": [
+        "运动性不安",
+        "肌肉抽搐",
+        "强直",
+        "震颤",
+        "共济失调",
+        "惊厥",
+        "高热",
+        "眩晕",
+        "瞳孔散大",
+        "呕吐",
+        "发绀",
+        "muscular twitching",
+        "rigidity",
+        "tremor",
+        "ataxia",
+        "convulsions",
+        "hyperpyrexia",
+        "vertigo",
+        "mydriasis",
+        "vomiting",
+        "cyanosis"
+      ],
+      "rows_preview": [
+        {
+          "side_effect_text": "LD<sub>50</sub>=~900 mg/kg (Orally in rats); LD<sub>50</sub>=90 mg/kg (Orally in women); Signs of overdose include motor unrest, muscular twitching and rigidity, tremor, ataxia, convulsions, hyperpyrexia, vertigo, mydriasis, vomiting, cyanosis, hypotension, shock, tachycardia, cardiac arrhythmias, impaired cardiac conduction, respiratory depression, and disturbances of consciousness up to deep coma."
+        }
+      ]
+    },
+    {
+      "idx": 45,
+      "cid": 3,
+      "question": "Maprotiline 与 Mirtazapine 合用是否存在相互作用风险？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 3079.8,
+      "pred_terms": [
+        "risk",
+        "can",
+        "depression",
+        "or",
+        "is",
+        "increase",
+        "esmirtazapine",
+        "with",
+        "mirtazapine",
+        "be",
+        "may",
+        "increased",
+        "cns",
+        "when",
+        "maprotiline",
+        "combined",
+        "the",
+        "of",
+        "activities",
+        "serotonergic",
+        "severity"
+      ],
+      "expected_terms": [
+        "Mirtazapine",
+        "2",
+        "5-Dimethoxy-4-ethylamphetamine may decrease the sedative activities of Maprotiline."
+      ],
+      "rows_preview": [
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "The risk or severity of CNS depression can be increased when Maprotiline is combined with Esmirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "米氮平",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        }
+      ]
+    },
+    {
+      "idx": 46,
+      "cid": 3,
+      "question": "Maprotiline 与 Mirtazapine 合用是否存在相互作用风险？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 3185.23,
+      "pred_terms": [
+        "risk",
+        "can",
+        "depression",
+        "or",
+        "is",
+        "increase",
+        "esmirtazapine",
+        "with",
+        "mirtazapine",
+        "be",
+        "may",
+        "increased",
+        "cns",
+        "when",
+        "maprotiline",
+        "combined",
+        "the",
+        "of",
+        "activities",
+        "serotonergic",
+        "severity"
+      ],
+      "expected_terms": [
+        "Mirtazapine",
+        "2",
+        "5-Dimethoxy-4-ethylamphetamine may decrease the sedative activities of Maprotiline."
+      ],
+      "rows_preview": [
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "The risk or severity of CNS depression can be increased when Maprotiline is combined with Esmirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "米氮平",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        }
+      ]
+    },
+    {
+      "idx": 47,
+      "cid": 3,
+      "question": "Maprotiline 与 Mirtazapine 合用是否存在相互作用风险？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 3073.57,
+      "pred_terms": [
+        "risk",
+        "can",
+        "depression",
+        "or",
+        "is",
+        "increase",
+        "esmirtazapine",
+        "with",
+        "mirtazapine",
+        "be",
+        "may",
+        "increased",
+        "cns",
+        "when",
+        "maprotiline",
+        "combined",
+        "the",
+        "of",
+        "activities",
+        "serotonergic",
+        "severity"
+      ],
+      "expected_terms": [
+        "Mirtazapine",
+        "2",
+        "5-Dimethoxy-4-ethylamphetamine may decrease the sedative activities of Maprotiline."
+      ],
+      "rows_preview": [
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "The risk or severity of CNS depression can be increased when Maprotiline is combined with Esmirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "米氮平",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        }
+      ]
+    },
+    {
+      "idx": 48,
+      "cid": 3,
+      "question": "Maprotiline 与 Mirtazapine 合用是否存在相互作用风险？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 3064.17,
+      "pred_terms": [
+        "risk",
+        "can",
+        "depression",
+        "or",
+        "is",
+        "increase",
+        "esmirtazapine",
+        "with",
+        "mirtazapine",
+        "be",
+        "may",
+        "increased",
+        "cns",
+        "when",
+        "maprotiline",
+        "combined",
+        "the",
+        "of",
+        "activities",
+        "serotonergic",
+        "severity"
+      ],
+      "expected_terms": [
+        "Mirtazapine",
+        "2",
+        "5-Dimethoxy-4-ethylamphetamine may decrease the sedative activities of Maprotiline."
+      ],
+      "rows_preview": [
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "Mirtazapine",
+          "desc": "The risk or severity of CNS depression can be increased when Maprotiline is combined with Esmirtazapine."
+        },
+        {
+          "drugA_label": "Maprotiline",
+          "drugB_label": "米氮平",
+          "desc": "Maprotiline may increase the serotonergic activities of Mirtazapine."
+        }
+      ]
+    },
+    {
+      "idx": 49,
+      "cid": 4,
+      "question": "绝经抑郁症 患者饮食上推荐吃什么？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1261.59,
+      "pred_terms": [
+        "火鸡肉",
+        "大白豆",
+        "黄豆浆",
+        "蛋白质",
+        "鲑鱼",
+        "糖类",
+        "母鸡汤",
+        "白鱼"
+      ],
+      "expected_terms": [
+        "大白豆",
+        "母鸡汤",
+        "火鸡肉",
+        "白鱼",
+        "糖类",
+        "蛋白质",
+        "鲑鱼",
+        "黄豆浆"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "大白豆"
+        },
+        {
+          "food_label": "母鸡汤"
+        },
+        {
+          "food_label": "火鸡肉"
+        }
+      ]
+    },
+    {
+      "idx": 50,
+      "cid": 5,
+      "question": "绝经抑郁症 患者有哪些饮食禁忌？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1245.8,
+      "pred_terms": [
+        "浓茶",
+        "汉堡",
+        "鱿鱼",
+        "海参",
+        "咖啡",
+        "鱼翅",
+        "薯条"
+      ],
+      "expected_terms": [
+        "咖啡",
+        "汉堡",
+        "浓茶",
+        "海参",
+        "薯条",
+        "鱼翅",
+        "鱿鱼"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "咖啡"
+        },
+        {
+          "food_label": "汉堡"
+        },
+        {
+          "food_label": "浓茶"
+        }
+      ]
+    },
+    {
+      "idx": 51,
+      "cid": 5,
+      "question": "绝经抑郁症 患者有哪些饮食禁忌？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1542.43,
+      "pred_terms": [
+        "浓茶",
+        "汉堡",
+        "鱿鱼",
+        "海参",
+        "咖啡",
+        "鱼翅",
+        "薯条"
+      ],
+      "expected_terms": [
+        "咖啡",
+        "汉堡",
+        "浓茶",
+        "海参",
+        "薯条",
+        "鱼翅",
+        "鱿鱼"
+      ],
+      "rows_preview": [
+        {
+          "food_label": "咖啡"
+        },
+        {
+          "food_label": "汉堡"
+        },
+        {
+          "food_label": "浓茶"
+        }
+      ]
+    },
+    {
+      "idx": 52,
+      "cid": 6,
+      "question": "绝经抑郁症 在饮食、检查与护理方面的要点是什么？",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 5158.59,
+      "pred_terms": [
+        "开创了安全治疗抑郁症的新时代",
+        "米氮平",
+        "鼾声",
+        "受体特异性",
+        "ht能抗抑郁药",
+        "http",
+        "食物不影响其吸收",
+        "血液透析",
+        "值得一提的是",
+        "心电活动",
+        "kgqa",
+        "睡眠进程",
+        "周",
+        "是ne能和特异性5",
+        "2周后才会产生明显的疗效",
+        "基于特异性作用于受体的机理",
+        "尽管药物治疗能够缓解抑郁症状",
+        "三酰甘油",
+        "肾上腺素异受体而增强ne",
+        "性激素六项检查",
+        "高密度脂蛋白胆固醇",
+        "病情完全缓解后仍然需要维持治疗4",
+        "黄豆浆",
+        "急性过量服药对生命几乎没有威胁",
+        "氟西汀是ssris",
+        "但几乎不能够预防复发",
+        "并能改善睡眠和抗焦虑",
+        "ht1受体",
+        "血氧饱和度",
+        "45mg",
+        "对多数患者而言",
+        "精神病症状",
+        "应该特别提醒患者及其家属",
+        "1严重或复发的抑郁",
+        "血清总胆固醇",
+        "是中枢神经系统突触前5",
+        "能系统的神经传导",
+        "纤维蛋白原",
+        "平均血氧饱和度",
+        "通常抗抑郁治疗依从性不好",
+        "年或更长时间",
+        "一些患者在症状好转后常常自行减量甚至停药",
+        "口鼻气流",
+        "它通过阻断中枢α2",
+        "适应证是",
+        "但活动性却有提高",
+        "ht释放后回收的强效抑制剂",
+        "睡眠效率",
+        "星期才能体现出来",
+        "白鱼",
+        "最佳疗效要到服药后4",
+        "抗抑郁药是改善抑郁心境的首选治疗",
+        "12",
+        "判断患者处于抑郁状态",
+        "性激素六项检查相关症状",
+        "非典型症状或季节性",
+        "9",
+        "肾脏排出",
+        "能加速5",
+        "所以又有新型的抗抑郁药面市",
+        "保持乐观愉快的情绪",
+        "应在睡前一次口服",
+        "ht3受体",
+        "4既往药物治疗有效",
+        "患者心境仍然低落",
+        "血小板",
+        "应该加强监护",
+        "达4",
+        "肾上腺素自受体和α2",
+        "3有自杀观念",
+        "cn",
+        "值得特别注意的是",
+        "大白豆",
+        "胸腹运动",
+        "与三环类",
+        "药物相比",
+        "nas",
+        "抗肾上腺素能及典型的ssris的副作用",
+        "双侧眼电活动",
+        "瑞美隆",
+        "鲑鱼",
+        "母鸡汤",
+        "临床医生经过综合分析",
+        "颌肌电活动",
+        "ht能和ne能系统有关",
+        "半衰期最长",
+        "有自杀念头的患者更容易将自杀计划付诸于行动",
+        "有助于选择有效的治疗方法",
+        "兴奋5",
+        "作用为基础",
+        "6",
+        "ht能和ne能神经递质的双重作用",
+        "凝血酶原时间",
+        "因不良反应而停药的几率低",
+        "阻断5",
+        "促进5",
+        "肝肾功能检查",
+        "然后维持治疗1",
+        "由于抑郁症与5",
+        "睡眠时间",
+        "2有躯体症状",
+        "应鼓励服药数年",
+        "经过肝脏代谢",
+        "即使没有上述指征",
+        "内源性抑郁",
+        "ht2和5",
+        "5有情感障碍家族史",
+        "ht",
+        "糖类",
+        "而且多数病人无须加药",
+        "透析",
+        "它通过5",
+        "抑郁症急性期需药物治疗6",
+        "8",
+        "对有两次以上明显重症抑郁发作的患者",
+        "待症状缓解后巩固治疗4",
+        "测量腹围",
+        "服药1",
+        "了解患者是否伴有躯体症状",
+        "火鸡肉",
+        "depression",
+        "低密度脂蛋白胆固醇",
+        "抑郁症很容易复发",
+        "天",
+        "有效剂量在15",
+        "提高耐受性",
+        "对三环类药物治疗无效的抑郁障碍亦有效",
+        "睡眠潜伏期",
+        "6心理治疗无效",
+        "tca",
+        "由于初始服药2周药物尚未显效",
+        "个月",
+        "合理膳食",
+        "能神经元胞体的放电",
+        "蛋白质",
+        "或精神病症状的抑郁",
+        "也可以推荐药物治疗",
+        "中的一种",
+        "故没有抗胆碱能",
+        "ht的释放",
+        "能和5",
+        "ssris类抗抑郁药应用于临床",
+        "凝血酶时间",
+        "与其他ssris",
+        "血红蛋白",
+        "脑电活动",
+        "血脂水平测量",
+        "以预防复发",
+        "否则",
+        "相比不良反应少",
+        "的一种",
+        "睡眠结构",
+        "因此危险性较高",
+        "合理作息",
+        "sa",
+        "以"
+      ],
+      "expected_terms": [
+        "大白豆",
+        "母鸡汤",
+        "火鸡肉",
+        "白鱼",
+        "糖类",
+        "蛋白质",
+        "三酰甘油",
+        "低密度脂蛋白胆固醇",
+        "凝血酶原时间",
+        "凝血酶时间",
+        "双侧眼电活动",
+        "口鼻气流",
+        "保持乐观愉快的情绪；合理作息；合理膳食"
+      ],
+      "rows_preview": [
+        {
+          "food_suitability": "http://kgqa.cn/depression#大白豆|http://kgqa.cn/depression#母鸡汤|http://kgqa.cn/depression#火鸡肉|http://kgqa.cn/depression#白鱼|http://kgqa.cn/depression#糖类|http://kgqa.cn/depression#蛋白质|http://kgqa.cn/depression#鲑鱼|http://kgqa.cn/depression#黄豆浆",
+          "drug_treatments_desc": "适应证是：①严重或复发的抑郁;②有躯体症状(内源性抑郁)或精神病症状的抑郁;③有自杀观念;④既往药物治疗有效;⑤有情感障碍家族史;⑥心理治疗无效。值得一提的是，即使没有上述指征，临床医生经过综合分析，判断患者处于抑郁状态，也可以推荐药物治疗。对多数患者而言，抗抑郁药是改善抑郁心境的首选治疗。\nSSRIs类抗抑郁药应用于临床，开创了安全治疗抑郁症的新时代，与三环类(TCA)相比不良反应少，因不良反应而停药的几率低，对三环类药物治疗无效的抑郁障碍亦有效，急性过量服药对生命几乎没有威胁，而且多数病人无须加药。氟西汀是SSRIs 中的一种，是中枢神经系统突触前5-HT释放后回收的强效抑制剂，与其他SSRIs 药物相比，半衰期最长，达4～6 天，食物不影响其吸收，经过肝脏代谢，肾脏排出。由于抑郁症与5-HT能和NE能系统有关，所以又有新型的抗抑郁药面市，它通过5-HT能和NE能神经递质的双重作用，以“受体特异性”作用为基础，提高耐受性。米氮平(瑞美隆)是NE能和特异性5-HT能抗抑郁药(NaS-SA)的一种。它通过阻断中枢α2-肾上腺素自受体和α2-肾上腺素异受体而增强NE 能和5-HT 能系统的神经传导。米氮平(瑞美隆)能加速5-HT 能神经元胞体的放电，促进5-HT的释放，兴奋5-HT1受体，阻断5-HT2和5-HT3受体，基于特异性作用于受体的机理，故没有抗胆碱能、抗肾上腺素能及典型的SSRIs的副作用，并能改善睡眠和抗焦虑。米氮平(瑞美隆)应在睡前一次口服，有效剂量在15～45mg，病情完全缓解后仍然需要维持治疗4～6 个月。了解患者是否伴有躯体症状、精神病症状、非典型症状或季节性，有助于选择有效的治疗方法。应该特别提醒患者及其家属，服药1～2周后才会产生明显的疗效，最佳疗效要到服药后4～8 星期才能体现出来。由于初始服药2周药物尚未显效，患者心境仍然低落，但活动性却有提高，有自杀念头的患者更容易将自杀计划付诸于行动，因此危险性较高，应该加强监护。抑郁症急性期需药物治疗6～12 周，待症状缓解后巩固治疗4～9 个月，然后维持治疗1 年或更长时间。否则，抑郁症很容易复发。尽管药物治疗能够缓解抑郁症状，但几乎不能够预防复发。对有两次以上明显重症抑郁发作的患者，应鼓励服药数年，以预防复发。值得特别注意的是，通常抗抑郁治疗依从性不好，一些患者在症状好转后常常自行减量甚至停药。",
+          "checks": "http://kgqa.cn/depression#|http://kgqa.cn/depression#三酰甘油|http://kgqa.cn/depression#低密度脂蛋白胆固醇|http://kgqa.cn/depression#凝血酶原时间|http://kgqa.cn/depression#凝血酶时间|http://kgqa.cn/depression#双侧眼电活动|http://kgqa.cn/depression#口鼻气流|http://kgqa.cn/depression#平均血氧饱和度|http://kgqa.cn/depression#心电活动|http://kgqa.cn/depression#性激素六项检查|http://kgqa.cn/depression#性激素六项检查相关症状|http://kgqa.cn/depression#测量腹围|http://kgqa.cn/depression#睡眠效率|http://kgqa.cn/depression#睡眠时间|http://kgqa.cn/depression#睡眠潜伏期|http://kgqa.cn/depression#睡眠结构|http://kgqa.cn/depression#睡眠进程|http://kgqa.cn/depression#纤维蛋白原|http://kgqa.cn/depression#肝肾功能检查|http://kgqa.cn/depression#胸腹运动|http://kgqa.cn/depression#脑电活动|http://kgqa.cn/depression#血小板|http://kgqa.cn/depression#血氧饱和度|http://kgqa.cn/depression#血液透析|http://kgqa.cn/depression#血清总胆固醇|http://kgqa.cn/depression#血红蛋白|http://kgqa.cn/depression#血脂水平测量|http://kgqa.cn/depression#透析|http://kgqa.cn/depression#颌肌电活动|http://kgqa.cn/depression#高密度脂蛋白胆固醇|http://kgqa.cn/depression#鼾声",
+          "nursing_desc": "保持乐观愉快的情绪；合理作息；合理膳食"
+        }
+      ]
+    },
+    {
+      "idx": 53,
+      "cid": 7,
+      "question": "微笑抑郁症 有哪些症状？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1080.61,
+      "pred_terms": [
+        "悲伤",
+        "怀疑自我",
+        "压抑",
+        "非常自卑",
+        "无奈",
+        "忧愁",
+        "悲哀",
+        "情绪失调",
+        "苦恼",
+        "强颜欢笑",
+        "困惑"
+      ],
+      "expected_terms": [
+        "压抑",
+        "困惑",
+        "强颜欢笑",
+        "忧愁",
+        "怀疑自我",
+        "悲伤",
+        "悲哀",
+        "情绪失调",
+        "无奈",
+        "苦恼"
+      ],
+      "rows_preview": [
+        {
+          "symptom": "压抑"
+        },
+        {
+          "symptom": "困惑"
+        },
+        {
+          "symptom": "强颜欢笑"
+        }
+      ]
+    },
+    {
+      "idx": 54,
+      "cid": 7,
+      "question": "微笑抑郁症 的常见临床表现有哪些？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1575.98,
+      "pred_terms": [
+        "悲伤",
+        "怀疑自我",
+        "压抑",
+        "非常自卑",
+        "无奈",
+        "忧愁",
+        "悲哀",
+        "情绪失调",
+        "苦恼",
+        "强颜欢笑",
+        "困惑"
+      ],
+      "expected_terms": [
+        "压抑",
+        "困惑",
+        "强颜欢笑",
+        "忧愁",
+        "怀疑自我",
+        "悲伤",
+        "悲哀",
+        "情绪失调",
+        "无奈",
+        "苦恼"
+      ],
+      "rows_preview": [
+        {
+          "symptom": "压抑"
+        },
+        {
+          "symptom": "困惑"
+        },
+        {
+          "symptom": "强颜欢笑"
+        }
+      ]
+    },
+    {
+      "idx": 55,
+      "cid": 7,
+      "question": "微笑抑郁症 都有啥症状？",
+      "ok": true,
+      "reason": "ok",
+      "latency_ms": 1160.67,
+      "pred_terms": [
+        "悲伤",
+        "怀疑自我",
+        "压抑",
+        "非常自卑",
+        "无奈",
+        "忧愁",
+        "悲哀",
+        "情绪失调",
+        "苦恼",
+        "强颜欢笑",
+        "困惑"
+      ],
+      "expected_terms": [
+        "压抑",
+        "困惑",
+        "强颜欢笑",
+        "忧愁",
+        "怀疑自我",
+        "悲伤",
+        "悲哀",
+        "情绪失调",
+        "无奈",
+        "苦恼"
+      ],
+      "rows_preview": [
+        {
+          "symptom": "压抑"
+        },
+        {
+          "symptom": "困惑"
+        },
+        {
+          "symptom": "强颜欢笑"
+        }
+      ]
+    },
+    {
+      "idx": 56,
+      "cid": 8,
+      "question": "用于诊断 绝经抑郁症 的常用检查有哪些？",
+      "ok": false,
+      "reason": "below_threshold",
+      "latency_ms": 1284.71,
+      "pred_terms": [
+        "鼾声",
+        "低密度脂蛋白胆固醇",
+        "血液透析",
+        "睡眠效率",
+        "心电活动",
+        "睡眠潜伏期",
+        "凝血酶原时间",
+        "睡眠进程",
+        "性激素六项检查相关症状",
+        "肝肾功能检查",
+        "睡眠时间",
+        "三酰甘油",
+        "血小板",
+        "性激素六项检查",
+        "高密度脂蛋白胆固醇",
+        "颌肌电活动",
+        "血红蛋白",
+        "凝血酶时间",
+        "血氧饱和度",
+        "透析",
+        "脑电活动",
+        "血脂水平测量",
+        "胸腹运动",
+        "测量腹围",
+        "血清总胆固醇",
+        "双侧眼电活动",
+        "睡眠结构",
+        "纤维蛋白原",
+        "平均血氧饱和度",
+        "口鼻气流"
+      ],
+      "expected_terms": [
+        "三酰甘油",
+        "低密度脂蛋白胆固醇",
+        "凝血酶原时间",
+        "凝血酶时间",
+        "双侧眼电活动",
+        "口鼻气流",
+        "平均血氧饱和度",
+        "心电活动",
+        "性激素六项检查",
+        "性激素六项检查相关症状"
+      ],
+      "rows_preview": [
+        {
+          "check_item": ""
+        },
+        {
+          "check_item": "三酰甘油"
+        },
+        {
+          "check_item": "低密度脂蛋白胆固醇"
+        }
+      ]
+    },
+    {
+      "idx": 57,
+      "cid": 0,
+      "question": "我最近很焦虑，也吃不下饭，我有抑郁症吗？",
+      "ok": false,
+      "reason": "cid_not_found",
+      "latency_ms": 1430.44,
+      "pred_terms": [],
+      "expected_terms": [],
+      "rows_preview": []
+    },
+    {
+      "idx": 58,
+      "cid": 0,
+      "question": "产后抑郁症 的核心知识要点（症状/饮食/检查）有哪些？",
+      "ok": false,
+      "reason": "cid_not_found",
+      "latency_ms": 2677.14,
+      "pred_terms": [],
+      "expected_terms": [
+        "优质肉类",
+        "全麦",
+        "动物肝",
+        "南瓜子",
+        "多普勒超声心动图"
+      ],
+      "rows_preview": []
+    },
+    {
+      "idx": 59,
+      "cid": 0,
+      "question": "微笑抑郁症 的核心知识要点（症状/饮食/检查）有哪些？",
+      "ok": false,
+      "reason": "cid_not_found",
+      "latency_ms": 2243.78,
+      "pred_terms": [],
+      "expected_terms": [
+        "压抑",
+        "困惑",
+        "强颜欢笑",
+        "忧愁",
+        "低脂牛奶",
+        "南瓜",
+        "含硒类食品",
+        "大蒜",
+        "地塞米松抑制试验",
+        "神经系统检查"
+      ],
+      "rows_preview": []
+    },
+    {
+      "idx": 60,
+      "cid": 0,
+      "question": "绝经抑郁症 的核心知识要点（症状/饮食/检查）有哪些？",
+      "ok": false,
+      "reason": "cid_not_found",
+      "latency_ms": 50087.24,
+      "pred_terms": [],
+      "expected_terms": [
+        "大白豆",
+        "母鸡汤",
+        "火鸡肉",
+        "白鱼",
+        "三酰甘油",
+        "低密度脂蛋白胆固醇",
+        "凝血酶原时间",
+        "凝血酶时间"
+      ],
+      "rows_preview": []
+    },
+    {
+      "idx": 61,
+      "cid": 0,
+      "question": "抑郁性神经症 的核心知识要点（症状/饮食/检查）有哪些？",
+      "ok": false,
+      "reason": "cid_not_found",
+      "latency_ms": 4187.18,
+      "pred_terms": [],
+      "expected_terms": [
+        "便秘",
+        "假笑",
+        "四肢痛",
+        "失眠",
+        "低脂牛奶",
+        "全麦面包",
+        "南瓜",
+        "大蒜",
+        "健康体检"
+      ],
+      "rows_preview": []
+    }
+  ]
+}
