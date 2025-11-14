@@ -9,7 +9,7 @@ batch_eval.py — KGQA 批量测试与评测（修正版）
 import os, sys, json, time, argparse, statistics, unicodedata, re
 from typing import Dict, Any, List, Tuple, Set
 
-# 你的系统适配器：要求暴露 run_pipeline()
+
 import qa_test as system
 
 # ---------------- CLI ----------------
@@ -66,19 +66,19 @@ def load_json(path: str) -> Dict[str, Any]:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-# ---------------- 结果抽取规则（与模板返回列对齐） ----------------
+# ---------------- 结果抽取规则 ----------------
 CID_COLS = {
     1: ["indication"],                # 药物适应证
     2: ["side_effect_text"],          # 药物副作用
-    3: ["desc", "interaction"],       # 相互作用（描述文本）
+    3: ["desc", "interaction"],       # 相互作用
     4: ["food_label", "food", "food_good"],
     5: ["food_label", "food", "food_avoid"],
     6: ["food_suitability", "drug_treatments_desc", "checks", "nursing_desc", "nursing", "treatment"],
     7: ["symptom"],
     8: ["check_item", "check"],
-    9: ["fact"],                      # 药物描述（多源）
+    9: ["fact"],                      # 药物描述
     10:["pmid","pubmed_id"],          # 出版物
-    11:["description"],               # 疾病描述（group_concat 也在一个字段里）
+    11:["description"],               # 疾病描述
 }
 
 def collect_predicted_terms(rows: List[Dict[str, Any]], cid: int) -> List[str]:
@@ -96,7 +96,7 @@ def collect_predicted_terms(rows: List[Dict[str, Any]], cid: int) -> List[str]:
             outs.extend(parts)
     return outs
 
-# ---------------- 命中判定（通用 + 特例） ----------------
+# ---------------- 命中判定 ----------------
 def eval_one(record: Dict[str, Any], units: List[Dict[str, Any]], policy: Dict[str, Any]) -> Tuple[bool, Dict[str, Any]]:
     cid = int(record.get("cid"))
     expected_terms = [str(x) for x in (record.get("expected_terms") or [])]
@@ -132,7 +132,7 @@ def eval_one(record: Dict[str, Any], units: List[Dict[str, Any]], policy: Dict[s
             return ok2, {"reason": "ok" if ok2 else "min_hits_not_met",
                          "pred_terms": list(pred_set), "rows": rows}
 
-    # ---- cid=3：相互作用（增加 substring_min_len 检测）
+    # ---- cid=3：相互作用
     if cid == 3:
         drug_b = (record.get("slots") or {}).get("drug_b") or ""
         must_name = normalize_text(drug_b)
@@ -166,7 +166,7 @@ def eval_one(record: Dict[str, Any], units: List[Dict[str, Any]], policy: Dict[s
         return ok_default, {"reason": "ok" if ok_default else "below_threshold",
                             "pred_terms": list(pred_set), "rows": rows}
 
-    # ---- cid=10：PMID 任意命中一个即正确
+    # ---- cid=10：PMID 
     if cid == 10:
         ok = len(exp_set & pred_set) >= 1
         return ok, {"reason": "ok" if ok else "no_pmid_hit",
