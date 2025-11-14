@@ -30,19 +30,17 @@ The system reliably handles pairwise drug–drug interaction reasoning, demonstr
 All project files are located under:
 
 dpqa/
-kgqaf/
-DPQA-fallback.py # Main hybrid QA system (KG + LLM)
-batch_eval.py # Batch evaluation runner
-kgqa_templates.py # SPARQL template library
-kgqa_testset_full_specified.v2.json # Evaluation set
-kgqa_eval_policy.json # Scoring configuration
-eval_detail.json # Example evaluation output
-README.md
+  kgqaf/
+    DPQA-fallback.py                     # Main hybrid QA system (KG + LLM)
+    batch_eval.py                        # Batch evaluation runner
+    kgqa_templates.py                    # SPARQL template library
+    kgqa_testset_full_specified.v2.json  # Evaluation set
+    kgqa_eval_policy.json                # Scoring configuration
+    eval_detail.json                     # Example evaluation output
+    README.md
 data/
-dpkg.ttl # RDF knowledge graph
+  dpkg.ttl                               # RDF knowledge graph
 
-yaml
-复制代码
 
 Access to the dataset and code can be provided for academic, non-commercial research upon request.
 
@@ -62,8 +60,7 @@ Access to the dataset and code can be provided for academic, non-commercial rese
 
 pip install rdflib lxml pandas requests openai
 
-yaml
-复制代码
+
 
 ---
 
@@ -84,15 +81,11 @@ Open GraphDB → create a new repository (e.g., `dpkgraph`) → import:
 
 data/dpkg.ttl
 
-yaml
-复制代码
 
 After importing, obtain the repository endpoint:
 
 http://localhost:7200/repositories/dpkgraph
 
-yaml
-复制代码
 
 ---
 
@@ -106,8 +99,7 @@ Ensure GraphDB is running during execution.
 
 Step 5. Run the System
 Interactive Mode
-bash
-复制代码
+
 cd dpqa/kgqaf
 python DPQA-fallback.py
 The console will prompt for natural-language input (Chinese or English).
@@ -122,8 +114,7 @@ retrieve RDF results
 produce grounded natural-language answers
 
 Batch Evaluation Mode
-cpp
-复制代码
+
 python batch_eval.py \
   --graphdb http://<host>:7200/repositories/dpkgraph \
   --templates kgqa_templates.py \
@@ -144,7 +135,6 @@ db:interaction_description.
 
 Output includes parsed question structure, SPARQL queries, GraphDB results, and final synthesized answers stored in:
 
-pgsql
-复制代码
+
 eval_detail.json
 Template-based results are deterministic and fully reproducible under the same configuration and prompts.
