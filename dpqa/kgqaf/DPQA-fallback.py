@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-qa_system.py —— 主程序：解析 → 渲染 → 查询 → 答案整合（稳健版）
+qa_system.py —— 主程序：解析 → 渲染 → 查询 → 答案整合
 - 一句多问：逐个查询，最后一次性整合输出
-- 模板渲染：委托 kgqa_templates.render(cid, slots)
 - OpenAI：用于 1) 问题分类/抽槽位 2) 最终答案整合 3)（仅当触发）智能生成SPARQL兜底
 - 稳定性：GraphDB 走 POST+超时；LLM 整合带入参裁剪、分批、超时与重试；失败自动降级
-- 交互：REPL 模式（不会回答完就退出），输入 exit 退出
+- 交互：REPL 模式，输入 exit 退出
 """
 
 import os, json, re, requests, time, sys
@@ -13,7 +12,7 @@ from typing import List, Dict, Any, Optional, Tuple
 from openai import OpenAI
 import kgqa_templates as tpl
 
-# ====================== 基础配置（环境变量可覆盖） ======================
+# ====================== 基础配置 ======================
 GRAPHDB_URL    = os.environ.get("GRAPHDB_URL",   "http://MacBook-Pro-88.local:7200/repositories/dpkgraph")
 MODEL_PARSE    = os.environ.get("MODEL_PARSE",   "gpt-5")      # 分类/抽槽位
 MODEL_ANSWER   = os.environ.get("MODEL_ANSWER",  "gpt-4o")     # 答案整合
@@ -21,9 +20,9 @@ MODEL_SPARQL   = os.environ.get("MODEL_SPARQL",  "gpt-5")      # （仅兜底时
 OPENAI_API_KEY= os.environ.get("OPENAI_API_KEY","")
 OPENAI_BASE    = os.environ.get("OPENAI_BASE_URL") or None
 
-HTTP_TIMEOUT   = int(os.environ.get("KG_HTTP_TIMEOUT_SEC", "20"))      # GraphDB HTTP超时（秒）
-QUERY_TIMEOUT  = int(os.environ.get("KG_QUERY_TIMEOUT_MS", "20000"))   # GraphDB 评估超时（毫秒）
-DEFAULT_LIMIT  = int(os.environ.get("KG_DEFAULT_LIMIT", "50"))         # 模板忘写 LIMIT 时兜底
+HTTP_TIMEOUT   = int(os.environ.get("KG_HTTP_TIMEOUT_SEC", "20"))      # GraphDB HTTP超时
+QUERY_TIMEOUT  = int(os.environ.get("KG_QUERY_TIMEOUT_MS", "20000"))   # GraphDB 评估超时
+DEFAULT_LIMIT  = int(os.environ.get("KG_DEFAULT_LIMIT", "50"))      
 
 # —— LLM 整合安全阀（按需调整） —— #
 OPENAI_TIMEOUT_SEC   = float(os.environ.get("OPENAI_TIMEOUT_SEC", "60"))
@@ -31,7 +30,7 @@ OPENAI_MAX_RETRIES   = int(os.environ.get("OPENAI_MAX_RETRIES", "2"))
 SUM_ROWS_LIMIT       = int(os.environ.get("SUM_ROWS_LIMIT", "200"))     # 每子问最多带多少行给整合模型
 SUM_FIELD_LEN        = int(os.environ.get("SUM_FIELD_LEN", "600"))      # 单字段最大字符数
 SUM_PAYLOAD_MAX_KB   = int(os.environ.get("SUM_PAYLOAD_MAX_KB", "300")) # 单次整合payload上限（KB），超过就分批
-OUTPUT_MODE          = os.environ.get("OUTPUT_MODE", "text").lower()    # debug 时可设为 json
+OUTPUT_MODE          = os.environ.get("OUTPUT_MODE", "text").lower()   
 
 if not OPENAI_API_KEY:
     raise RuntimeError("请设置 OPENAI_API_KEY 环境变量。")
@@ -43,7 +42,7 @@ client = OpenAI(
     max_retries=OPENAI_MAX_RETRIES,
 )
 
-# ====================== 彩色日志 ======================
+
 def log(msg: str, level="INFO"):
     ts = time.strftime("%H:%M:%S")
     color = {"INFO":"\033[36m","OK":"\033[32m","WARN":"\033[33m","ERR":"\033[31m"}.get(level,"")
@@ -51,7 +50,7 @@ def log(msg: str, level="INFO"):
     print(f"{color}[{ts}] {level}: {msg}{endc}")
     sys.stdout.flush()
 
-# ====================== 提示词（分类/整合，原样） ======================
+# ====================== 提示词 ======================
 SYSTEM_PROMPT_PARSE = r"""
 你是一个“抑郁症医学知识图谱问答系统”的语义解析器。
 你的任务是从用户的问题中识别出一个或多个子问题，并对每个子问题输出：
@@ -161,7 +160,7 @@ SYSTEM_PROMPT_ANSWER = r"""
 - 不要编造；不要超出给定数据。
 - 如果查到的结果过于模糊，如“物理治疗”、“心理治疗”等，可进行进行适当的内容细化但绝不能瞎写。"""
 
-# ====================== 智能 SPARQL 生成：系统提示词（新增） ======================
+# ====================== 智能 SPARQL 生成：系统提示词 ======================
 SYSTEM_PROMPT_SPARQL_GEN = r"""
 但是新的提示词里的谓词和我的知识图谱好像没有保持一致。需要与其保持一致。
 你是“抑郁症医学知识图谱问答系统”的 SPARQL 生成器。
@@ -279,7 +278,7 @@ def render_sparql(cid: Optional[int], slots: Dict[str, str]) -> str:
         sparql += f"\nLIMIT {DEFAULT_LIMIT}"
     return sparql
 
-# ====================== 智能 SPARQL 生成（仅兜底时调用） ======================
+# ====================== 智能 SPARQL 生成 ======================
 def _strip_code_fence(s: str) -> str:
     # 从可能的 ```sparql ...``` 或 ``` ...``` 中抽取
     m = re.search(r'```(?:sparql)?\s*(.*?)```', s, flags=re.S|re.I)
@@ -305,9 +304,7 @@ def build_sparql_user_payload(unit: Dict[str, Any]) -> str:
     return json.dumps(payload, ensure_ascii=False, indent=2)
 
 def llm_generate_sparql(unit: Dict[str, Any]) -> str:
-    """
-    低温度、一次性生成一个 SELECT SPARQL。失败抛异常，调用方决定是否继续。
-    """
+
     user_payload = build_sparql_user_payload(unit)
     log("触发兜底：调用 LLM 生成 SPARQL。", "WARN")
     resp = client.chat.completions.create(
@@ -388,7 +385,7 @@ def run_pipeline(user_query: str) -> List[Dict[str, Any]]:
     log("所有子问题处理完毕。", "OK")
     return results
 
-# ====================== 本地降级整合（不依赖 LLM） ======================
+# ====================== 本地降级整合======================
 def _first_sentences(s: str, max_sents=2, max_chars=400):
     if not isinstance(s, str): return s
     import re as _re
@@ -426,7 +423,7 @@ def local_fallback_summary(units: List[Dict[str, Any]]) -> str:
             parts.append(f"{title}：{len(rows)} 条结果")
     return "\n".join(parts)
 
-# ====================== LLM 整合（带裁剪/分批/降级） ======================
+# ====================== LLM 整合 ======================
 def _truncate_text(s: Any, limit: int) -> Any:
     if not isinstance(s, str): return s
     return s if len(s) <= limit else (s[:limit] + " …")
@@ -495,7 +492,7 @@ def llm_summarize(units_with_rows: List[Dict[str, Any]]) -> str:
     log("整合完成。", "OK")
     return final
 
-# ====================== 输出（调试友好） ======================
+# ====================== 输出 ======================
 def format_plain_results(units_with_rows, mode: str = None) -> str:
     mode = (mode or OUTPUT_MODE).lower()
     if mode == "json":
@@ -531,7 +528,7 @@ def format_plain_results(units_with_rows, mode: str = None) -> str:
             lines.append(f"    ……（还有 {len(rows)-8} 条）")
     return "\n".join(lines)
 
-# ====================== 一站式调用 ======================
+
 def answer_query(user_query: str, bypass_llm: bool = False) -> str:
     log("系统开始处理输入问题。", "INFO")
     mids = run_pipeline(user_query)
