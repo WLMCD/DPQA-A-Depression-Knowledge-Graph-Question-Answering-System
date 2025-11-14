@@ -262,9 +262,7 @@ WHERE {
 }
 
 
-# ==============
-# 渲染函数
-# ==============
+
 def _escape(s: str) -> str:
     return (s or "").replace('\\', '\\\\').replace('"', '\\"')
 
