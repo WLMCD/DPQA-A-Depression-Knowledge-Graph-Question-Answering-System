@@ -1,100 +1,115 @@
-# DPQA-A-Depression-Knowledge-Graph-Question-Answering-System
+# DPQA: A Depression Knowledge Graph Question Answering System
+_Reproducible Artifact Documentation_
 
-🧩 Abstract
+---
 
-DPQA is a hybrid knowledge-graph–grounded question answering system designed for depression-related medical knowledge.
+## ## Abstract
+
+DPQA is a hybrid knowledge-graph–grounded question answering system designed for depression-related medical knowledge.  
 The system integrates a structured RDF knowledge graph—constructed from DrugBank, SNOMED CT, and curated Chinese medical text—with large language models (LLMs) such as GPT-4o.
 
 DPQA automatically:
 
-parses natural-language questions
-
-generates SPARQL queries
-
-executes them against GraphDB
-
-synthesizes fact-grounded answers
+- parses natural-language questions  
+- generates SPARQL queries  
+- executes them against GraphDB  
+- synthesizes fact-grounded answers  
 
 Experimental results show:
 
-Accuracy: ~75.4% on template-based questions
-
-Hallucination rate: 0% (for supported templates)
-
-Latency: ~2.5 seconds per query
+- **Accuracy:** ~75.4% on template-based questions  
+- **Hallucination rate:** **0%** (for supported templates)  
+- **Latency:** ~2.5 seconds per query  
 
 The system reliably handles pairwise drug–drug interaction reasoning, demonstrating its potential as a trustworthy QA framework in the mental-health domain.
 
-📂 Project Structure & Access
+---
+
+## ## Project Structure & Access
 
 All project files are located under:
 
 dpqa/
-  kgqaf/
-    DPQA-fallback.py                     # Main hybrid QA system (KG + LLM)
-    batch_eval.py                        # Batch evaluation runner
-    kgqa_templates.py                    # SPARQL template library
-    kgqa_testset_full_specified.v2.json  # Evaluation set
-    kgqa_eval_policy.json                # Scoring configuration
-    eval_detail.json                     # Example evaluation output
-    README.md
+kgqaf/
+DPQA-fallback.py # Main hybrid QA system (KG + LLM)
+batch_eval.py # Batch evaluation runner
+kgqa_templates.py # SPARQL template library
+kgqa_testset_full_specified.v2.json # Evaluation set
+kgqa_eval_policy.json # Scoring configuration
+eval_detail.json # Example evaluation output
+README.md
 data/
-  dpkg.ttl                               # RDF knowledge graph
+dpkg.ttl # RDF knowledge graph
 
+yaml
+复制代码
 
 Access to the dataset and code can be provided for academic, non-commercial research upon request.
 
-⚙️ Installation
-Step 1. Environment Setup
+---
 
-Requirements
+## ## Installation
 
-Python 3.11+
+### Step 1. Environment Setup
 
-GraphDB 10.6.2+
+**Requirements**
 
-Internet connection (for OpenAI API)
+- Python **3.11+**
+- GraphDB **10.6.2+**
+- Internet connection (for OpenAI API)
 
-Python libraries
+**Python libraries**
 
 pip install rdflib lxml pandas requests openai
 
-Step 2. Configure Your OpenAI API Key
+yaml
+复制代码
+
+---
+
+### Step 2. Configure Your OpenAI API Key
 
 The hybrid system uses an LLM for:
 
-semantic parsing
+- semantic parsing  
+- answer synthesis  
 
-answer synthesis
+Insert your API key **directly** into the configuration of the QA system.
 
-Insert your API key directly into the configuration of the QA system.
+---
 
-Step 3. Import the Knowledge Graph
+### Step 3. Import the Knowledge Graph
 
-Open GraphDB → create a new repository (e.g., dpkgraph) → import:
+Open GraphDB → create a new repository (e.g., `dpkgraph`) → import:
 
 data/dpkg.ttl
 
+yaml
+复制代码
 
-After importing, obtain the repository endpoint, such as:
+After importing, obtain the repository endpoint:
 
 http://localhost:7200/repositories/dpkgraph
 
-Step 4. Configure the Remote GraphDB Connection
+yaml
+复制代码
 
-Edit DPQA-fallback.py to set:
+---
 
+### Step 4. Configure the Remote GraphDB Connection
+
+Edit `DPQA-fallback.py`:
+
+```python
 GRAPHDB_URL = "http://<your-host>:7200/repositories/dpkgraph"
-
-
 Ensure GraphDB is running during execution.
 
 Step 5. Run the System
 Interactive Mode
+bash
+复制代码
 cd dpqa/kgqaf
 python DPQA-fallback.py
-
-
 The console will prompt for natural-language input (Chinese or English).
 The system will:
 
@@ -104,9 +119,11 @@ generate SPARQL
 
 retrieve RDF results
 
-return grounded answers
+produce grounded natural-language answers
 
 Batch Evaluation Mode
+cpp
+复制代码
 python batch_eval.py \
   --graphdb http://<host>:7200/repositories/dpkgraph \
   --templates kgqa_templates.py \
@@ -115,10 +132,8 @@ python batch_eval.py \
   --model_parse gpt-4o \
   --model_answer gpt-4o \
   --out eval_detail.json
-
-🧪 Evaluation & Expected Results
-
-Using the provided dataset and settings, you should reproduce:
+## Evaluation & Expected Results
+Using the provided dataset and settings:
 
 Template-based accuracy: ~75.4%
 
@@ -127,9 +142,9 @@ Average latency: ~2.5 seconds/query
 Interaction reasoning: Supports pairwise drug–drug interactions via
 db:interaction_description.
 
-The evaluation output (including parsed structures, SPARQL queries, query results, and final synthesized answers) will be saved to:
+Output includes parsed question structure, SPARQL queries, GraphDB results, and final synthesized answers stored in:
 
+pgsql
+复制代码
 eval_detail.json
-
-
 Template-based results are deterministic and fully reproducible under the same configuration and prompts.
